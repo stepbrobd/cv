@@ -1,5 +1,8 @@
 name: Build
 
+permissions:
+  contents: write
+
 on:
   push:
     branches: [ master ]
@@ -19,9 +22,15 @@ jobs:
           compiler: pdflatex
           args: -interaction=nonstopmode -shell-escape
   
-      - name: Collect Artifact
-        uses: actions/upload-artifact@v3
+      - name: Rename
+        run: mv main.pdf cv.pdf
+  
+      - name: Tag
+        run: echo "TAG=$(date +%Y-%m-%d-%H-%M-%S)" >> ${GITHUB_ENV}
+
+      - name: Release
+        uses: softprops/action-gh-release@v1
         with:
-          name: cv.pdf
-          path: main.pdf
-          retention-days: 90
+          tag_name: ${{ env.TAG }}
+          files: |
+            cv.pdf
