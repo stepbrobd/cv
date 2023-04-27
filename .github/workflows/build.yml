@@ -15,13 +15,26 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
         
+      - name: Init
+        uses: dante-ev/latex-action@latest
+        with:
+          root_file: main.tex
+          compiler: pdflatex
+          args: -interaction=nonstopmode -shell-escape
+      
+      - name: BibTeX
+        uses: dante-ev/latex-action@latest
+        with:
+          root_file: main.aux
+          compiler: bibtex
+          
       - name: Compile
         uses: dante-ev/latex-action@latest
         with:
           root_file: main.tex
           compiler: pdflatex
           args: -interaction=nonstopmode -shell-escape
-  
+      
       - name: Rename
         run: mv main.pdf cv.pdf
   
