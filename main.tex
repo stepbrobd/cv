@@ -2,20 +2,20 @@
 
 \makeatletter
 \newenvironment{thebibliography}[1]
-     {\list{\@biblabel{\@arabic\c@enumiv}}%
-           {\settowidth\labelwidth{\@biblabel{#1}}%
+     {\list{\@biblabel{\@arabic\c@enumiv}}
+           {\settowidth\labelwidth{\@biblabel{#1}}
             \leftmargin\labelwidth
             \advance\leftmargin\labelsep
-            \usecounter{enumiv}%
+            \usecounter{enumiv}
             \let\p@enumiv\@empty
-            \renewcommand\theenumiv{\@arabic\c@enumiv}}%
+            \renewcommand\theenumiv{\@arabic\c@enumiv}}
       \sloppy
       \clubpenalty4000
       \@clubpenalty \clubpenalty
-      \widowpenalty4000%
+      \widowpenalty4000
       \sfcode`\.\@m}
      {\def\@noitemerr
-       {\@latex@warning{Empty `thebibliography' environment}}%
+       {\@latex@warning{Empty `thebibliography' environment}}
       \endlist}
 \newcommand\newblock{\hskip .11em\@plus.33em\@minus.07em}
 \makeatother
