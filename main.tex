@@ -35,8 +35,8 @@
 \renewcommand{\headrulewidth}{0in}
 \renewcommand{\footrulewidth}{0in}
 \fancyhf{}
-\fancyhead[L]{\textcolor{gray}{\thepage}}
 \fancyhead[R]{\textcolor{gray}{Updated on \today}}
+\fancyfoot[R]{\textcolor{gray}{\thepage/\pageref{LastPage}}}
 
 \newcommand{\link}[2]{
 \href{#1}{\underline{\texttt{#2}}}
@@ -135,7 +135,7 @@ Thesis: Hardware System and Methods to Determine ME/CFS and Long COVID Disease S
 {\link{https://github.com/nixos/nixpkgs}{github.com/nixos/nixpkgs}} {
 \begin{itemize}
 \item Nix Packages collection, 1000+ commits per month.
-\item NixPkgs maintainer, Darwin maintainer. 1 open PR, 8 closed PR, 10+ reviewed PR.
+\item NixPkgs maintainer, Darwin maintainer. 1 open PR, 9 closed PR, 10+ reviewed PR.
 \end{itemize}
 }
 
@@ -147,12 +147,12 @@ Thesis: Hardware System and Methods to Determine ME/CFS and Long COVID Disease S
 \end{itemize}
 }
 
-\section{Publication}
+\section{Publications}
 
 \normalsize{
 \nocite{*}
 \bibliographystyle{unsrt}
-\bibliography{publication}
+\bibliography{publications}
 }
 
 \end{document}
