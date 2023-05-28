@@ -22,7 +22,7 @@
     zip: "97210",
   ),
   links: (
-    (display: "yifei-s.com", url:"https://yifei.md"),
+    (display: "yifei-s.com", url:"https://yifei-s.com"),
     (display: "github.com/yifei-s", url: "https://github.com/stepbrobd"),
     (display: "linkedin.com/in/yifei-s", url: "https://www.linkedin.com/in/yifei-s")
   ),
@@ -35,7 +35,7 @@
     attended: "2023/09 - 2024/12",
     location: "Boston, MA, USA",
   )[
-    Attended: PyCon 2023 (in-person), WWDC 2023 (in-person).
+    Attended: PyCon 2023 (Salt Lake City, UT), WWDC 2023 (Cupertino, CA).
     
     Thesis: TBD.
     Advisor: TBD.
@@ -47,7 +47,7 @@
     attended: "2019/08 - 2023/05",
     location: "Salt Lake City, UT, USA",
   )[
-    Attended: CppCon 2021 (in-person), PyCon 2022 (in-person), DockerCon 2022 (virtual), HackMIT 2022 (in-person).
+    Attended: CppCon 2021 (Denver, CO), PyCon 2022 (Salt Lake City, UT), DockerCon 2022 (Palo Alto, CA), HackMIT 2022 (Boston, MA).
     
     Thesis: #link("https://ccs.neu.edu/~ysun/publications/system-and-methods-to-determine-mecfs-and-longcovid-disease-severity-using-wearable-sensor-and-survey-data.pdf")["System and Methods to Determine ME/CFS & Long COVID Disease Severity Using Wearable Sensor & Survey Data"].
     Advisor: #link("https://iss.mech.utah.edu/shad-roundy")[Shad Roundy]. Co-advisor: #link("https://robot-learning.cs.utah.edu/thermans")[Tucker Hermans].
