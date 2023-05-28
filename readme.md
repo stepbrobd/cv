@@ -2,7 +2,11 @@
 
 ![Status](https://github.com/stepbrobd/curriculum-vitae/actions/workflows/release.yml/badge.svg)
 
-CV with [Typst](https://github.com/typst/typst).
+CV with [Typst](https://github.com/typst/typst) and [Nix](https://nixos.org).
+
+```shell
+curl https://api.github.com/repos/stepbrobd/curriculum-vitae/releases/latest | jq -r ".assets[].browser_download_url"
+```
 
 ## Build
 
