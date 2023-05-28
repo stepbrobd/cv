@@ -1,5 +1,7 @@
 # Curriculum Vitae
 
+![Status](https://github.com/stepbrobd/curriculum-vitae/actions/workflows/release.yml/badge.svg)
+
 CV with [Typst](https://github.com/typst/typst).
 
 ## Build
