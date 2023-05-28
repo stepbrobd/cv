@@ -49,7 +49,7 @@
   )[
     Attended: CppCon 2021 (in-person), PyCon 2022 (in-person), DockerCon 2022 (virtual), HackMIT 2022 (in-person).
     
-    Thesis: #link("")["Hardware System and Methods to Determine ME/CFS and Long COVID Disease Severity Using Wearable Sensor and Survey Data"].
+    Thesis: #link("https://ccs.neu.edu/~ysun/publications/system-and-methods-to-determine-mecfs-and-longcovid-disease-severity-using-wearable-sensor-and-survey-data.pdf")["System and Methods to Determine ME/CFS & Long COVID Disease Severity Using Wearable Sensor & Survey Data"].
     Advisor: #link("https://iss.mech.utah.edu/shad-roundy")[Shad Roundy]. Co-advisor: #link("https://robot-learning.cs.utah.edu/thermans")[Tucker Hermans].
   ]
 ]
