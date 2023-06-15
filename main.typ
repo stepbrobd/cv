@@ -90,7 +90,7 @@
     display: "github.com/nixos/nixpkgs",
     url: "https://github.com/nixos/nixpkgs",
   )[
-    - Nix Packages collection, 1000+ commits per month.
+    - Nix Packages collection, 5000+ commits per month.
     - NixPkgs maintainer, Darwin maintainer. 10+ merged PR, 10+ reviewed PR.
   ]
 
