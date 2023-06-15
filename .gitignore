@@ -1,0 +1,10 @@
+# Editor
+/.idea
+/.vscode
+
+# Nix
+/result
+/.direnv
+
+# Typst
+*.pdf
