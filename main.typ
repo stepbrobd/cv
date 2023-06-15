@@ -28,7 +28,7 @@
 #section(name: "Research Interests")[
   #interests()[
     + Formal verification for distributed systems and database systems.
-    + Programming language and concurrent data structure related verification and fuzzing.
+    + Programming language and concurrent data structure related formal verification and fuzz testing.
     + IMU data feature extraction and machine learning for robotic systems and healthcare applications.
   ]
 ]
@@ -75,7 +75,7 @@
     worked: "2019/12 - 2020/09"
   )[
     - Enterprise system administration, managed 1000+ university-owned Apple devices (Macs, iPads, Apple TVs, etc.).
-    - Utilized Jamf Pro, Radmind, and Apple School Manager to perform day-to-day MDM tasks. Created multiple automation tools to perform unattended on-boarding, off-boarding, and package distributions.
+    - Utilized Jamf Pro, Radmind, and Apple School Manager to perform day-to-day MDM tasks. Created multiple automation tools to perform unattended on-boarding, off-boarding, package licensing, updates, and distributions.
   ]
 
   #employment(
@@ -84,21 +84,11 @@
     worked: "2018/07 - 2018/08"
   )[
     - Competitive robotic system design/modeling, embedded system programming, control system programming, and computer vision. Developed path planning and task scheduling algorithms for predefined workflow.
-    - Utilized STM32F4 platform to built out a robotic system with wireless image transmission, image recognition, automated reasoning, and task scheduling capabilities, following predefined rules sets to complete tasks.
+    - Utilized STM32F4 platform to build out a robotic system with wireless image transmission, image recognition, automated reasoning, and task scheduling capabilities, following predefined rule sets to complete tasks.
   ]
 ]
 
-
-#section(name: "OSS Contribution")[
-  #contribution(
-    project: "NixPkgs",
-    display: "github.com/nixos/nixpkgs",
-    url: "https://github.com/nixos/nixpkgs",
-  )[
-    - Nix packages collection, 5000+ commits per month.
-    - NixPkgs maintainer, Darwin maintainer. 10+ merged PR, 10+ reviewed PR.
-  ]
-
+#section(name: "OSS Contributions")[
   #contribution(
     project: "MetaProcessor",
     display: "github.com/metaprocessor/metaprocessor",
@@ -107,18 +97,44 @@
     - Contributor, code owner. Package published to PyPI.
     - Data collection pipeline developed for MbientLab MetaMotion series IMUs. Collected terabyte-level IMU data in a joint research project in collaboration with the Bateman Horne Center.
   ]
+
+  #contribution(
+    project: "Nix",
+    display: "github.com/nixos/nix",
+    url: "https://github.com/nixos/nix",
+  )[
+    - Cross-platform purely functional package manager focused on reproducible environment.
+    - Aside from contributions to Nix, also added Nix support and NixPkgs Overlays to multiple other repos/packages: #link("https://github.com/stepbrobd/raycast-overlay")[`raycast`], #link("https://github.com/stepbrobd/osu-overlay")[`osu-lazer`], #link("https://github.com/crunchy-labs/crunchy-cli")[`crunchy-cli`], etc.
+  ]
+
+  #contribution(
+    project: "NixPkgs",
+    display: "github.com/nixos/nixpkgs",
+    url: "https://github.com/nixos/nixpkgs",
+  )[
+    - Nix packages collection, 5000+ commits per month.
+    - NixPkgs maintainer, Darwin maintainer. Maintains multiple packages, 10+ merged PR, 10+ reviewed PR.
+  ]
+
+  #contribution(
+    project: "SRD",
+    display: "github.com/stepbrobd/srd",
+    url: "https://github.com/stepbrobd/srd",
+  )[
+    - Proof of concept Go static race checker based on extracting structural operational semantics rules and applying the rule sets to perform static race detection.
+    - As a static race checker, false positives are expected. The detection is done by a stateful traversal of provided Go source file's abstract syntax tree.
+  ]
 ]
 
-/*
+
 #section(name: "Publications")[
   #publications(
     path: "publications.bib",
     style: "ieee",
     bold: "Y. Sun",
     keys: (
-      "", // add citation key here
+      "2023-05-01",
+      "2023-07-01",
     ),
   )
 ]
-*/
-
