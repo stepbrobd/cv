@@ -1,6 +1,4 @@
 #let cv(
-  update: none,
-  
   show_address: none,
   show_contact: none,
   show_links: none,
@@ -19,7 +17,7 @@
     margin: (x: 0.5in, y: 0.5in),
     header: [
       #h(1fr)
-      #text(gray)[Updated on #update]
+      #text(gray)[Updated on #datetime.today().display("[month repr:long] [day], [year]")]
     ],
     footer: [
       #h(1fr)
@@ -58,6 +56,10 @@
   #body
 ]
 
+#let interests(body) = [
+  #body
+]
+
 #let education(
   institution: none,
   degree: none,
@@ -71,7 +73,7 @@
   #body
 ]
 
-#let experience(
+#let employment(
   position: none,
   company: none,
   worked: none,
