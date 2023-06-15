@@ -1,9 +1,6 @@
-#set text(font: "Barlow")
 #import "document.typ": *
 
 #show: cv.with(
-  update: datetime.today().display("[month repr:long] [day], [year]"),
-  
   show_contact: true,
   show_address: true,
   show_links: true,
@@ -27,6 +24,14 @@
     (display: "linkedin.com/in/yifei-s", url: "https://www.linkedin.com/in/yifei-s")
   ),
 )
+
+#section(name: "Research Interests")[
+  #interests()[
+    + Formal verification for distributed systems and database systems.
+    + Programming language and concurrent data structure related verification and fuzzing.
+    + IMU data feature extraction and machine learning for robotic systems and healthcare applications.
+  ]
+]
 
 #section(name: "Education")[
   #education(
@@ -54,8 +59,8 @@
   ]
 ]
 
-#section(name: "Experience")[
-  #experience(
+#section(name: "Employment")[
+  #employment(
     position: "Research Assistant",
     company: "University of Utah",
     worked: "2021/08 - 2023/05"
@@ -64,7 +69,7 @@
     - The infrastructure is built on 5000+ lines of Nix, Python, Go and C++, aggregating 100+ IMUs, 20+ single-board computers, and 3+ high-performance servers. We collected terabyte-level motion data, and applied sensor fusion, motion analysis, and machine learning techniques on collected time-series data and survey data. We are planning to use our research outcome to propose to medical regulators as possible standardized diagnostic procedures and severity categorization methods for ME/CFS, Long COVID, and other related medical syndromes.
   ]
 
-  #experience(
+  #employment(
     position: "System Administrator",
     company: "University of Utah",
     worked: "2019/12 - 2020/09"
@@ -73,7 +78,7 @@
     - Utilized Jamf Pro, Radmind, and Apple School Manager to perform day-to-day MDM tasks. Created multiple automation tools to perform unattended on-boarding, off-boarding, and package distributions.
   ]
 
-  #experience(
+  #employment(
     position: "Intern",
     company: "DJI",
     worked: "2018/07 - 2018/08"
@@ -90,7 +95,7 @@
     display: "github.com/nixos/nixpkgs",
     url: "https://github.com/nixos/nixpkgs",
   )[
-    - Nix Packages collection, 5000+ commits per month.
+    - Nix packages collection, 5000+ commits per month.
     - NixPkgs maintainer, Darwin maintainer. 10+ merged PR, 10+ reviewed PR.
   ]
 
