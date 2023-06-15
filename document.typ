@@ -11,13 +11,15 @@
 ) = [
   #set document(author: contact.name, title: contact.name)
   #set text(font: "New Computer Modern", lang: "en", size: 10pt)
+
   #show link: underline
+
   #set page(
     paper: "us-letter",
-    margin: (x: 0.5in, y: 0.5in),
+    margin: (x: 1in, y: 1in),
     header: [
       #h(1fr)
-      #text(gray)[Updated on #datetime.today().display("[month repr:long] [day], [year]")]
+      #text(gray)[#contact.name]
     ],
     footer: [
       #h(1fr)
@@ -47,6 +49,8 @@
   ]
 
   #body
+
+  #align(bottom + right, [#text(gray)[Last updated on #datetime.today().display("[month repr:long] [day], [year]").]])
 ]
 
 #let section(name: none, body) = [
@@ -107,4 +111,3 @@
     move(dx: 1000%, dy: 1000%, cite(keys.at(i)))
   }
 ]
-
