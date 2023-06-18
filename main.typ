@@ -90,6 +90,15 @@
 
 #section(name: "OSS Contributions")[
   #contribution(
+    project: "CV",
+    display: "github.com/stepbrobd/cv",
+    url: "https://github.com/stepbrobd/cv",
+  )[
+    - This very CV, minimal and declarative, with #link("https://nixos.org")[Nix] and #link("https://github.com/typst/typst")[Typst].
+    - Automated build and release, only on `*.typ` and/or `*.bib` file change(s).
+  ]
+  
+  #contribution(
     project: "MetaProcessor",
     display: "github.com/metaprocessor/metaprocessor",
     url: "https://github.com/metaprocessor/metaprocessor",
@@ -104,7 +113,7 @@
     url: "https://github.com/nixos/nix",
   )[
     - Cross-platform purely functional package manager focused on reproducible environment.
-    - Aside from contributions to Nix, also added Nix support and NixPkgs Overlays to multiple other repos/packages: #link("https://github.com/stepbrobd/raycast-overlay")[`raycast`], #link("https://github.com/stepbrobd/osu-overlay")[`osu-lazer`], #link("https://github.com/crunchy-labs/crunchy-cli")[`crunchy-cli`], etc.
+    - Aside from contributions to Nix, also added Nix support and NixPkgs Overlays to multiple other repos/packages: #link("https://github.com/crunchy-labs/crunchy-cli")[`crunchy-cli`], #link("https://github.com/stepbrobd/osu-overlay")[`osu-lazer`], #link("https://github.com/stepbrobd/raycast-overlay")[`raycast`], etc.
   ]
 
   #contribution(
@@ -125,7 +134,6 @@
     - As a static race checker, false positives are expected. The detection is done by a stateful traversal of provided Go source file's abstract syntax tree.
   ]
 ]
-
 
 #section(name: "Publications")[
   #publications(
