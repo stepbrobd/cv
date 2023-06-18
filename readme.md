@@ -5,7 +5,7 @@
 CV with [Typst](https://github.com/typst/typst) and [Nix](https://nixos.org).
 
 ```shell
-curl https://api.github.com/repos/stepbrobd/curriculum-vitae/releases/latest | jq -r ".assets[].browser_download_url"
+curl https://api.github.com/repos/stepbrobd/cv/releases/latest | jq -r ".assets[].browser_download_url"
 ```
 
 ## Build
@@ -18,5 +18,5 @@ nix run github:typst/typst -- compile main.typ cv.pdf
 
 ## License
 
-This repository content excluding all submodules is licensed under the [MIT License](license.md), third-party code are subject to their original license.
-
+The contents inside this repository, excluding all submodules, are licensed under the [MIT License](license.md). 
+Third-party file(s) and/or code(s) are subject to their original term(s) and/or license(s).
