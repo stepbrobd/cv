@@ -50,7 +50,7 @@
 
   #body
 
-  #align(bottom + right, [#text(gray)[Last updated on #datetime.today().display("[month repr:long] [day], [year]").]])
+  #align(bottom + right, [#text(gray)[Last updated on #datetime.today().display("[month repr:long] [day], [year]")]])
 ]
 
 #let section(name: none, body) = [
