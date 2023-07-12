@@ -8,7 +8,7 @@
   contact: (
     name: "Yifei Sun",
     phone: "+1 (801) 433-8213",
-    email: "hi@yifei-s.com",
+    email: "yifei@email.com",
     orcid: "0000-0002-1591-7458",
   ),
   address: (
@@ -19,8 +19,8 @@
     zip: "97210",
   ),
   links: (
-    (display: "yifei-s.com", url:"https://yifei-s.com"),
-    (display: "github.com/yifei-s", url: "https://github.com/stepbrobd"),
+    (display: "ysun.co", url:"https://ysun.co"),
+    (display: "github.com/stepbrobd", url: "https://github.com/stepbrobd"),
     (display: "linkedin.com/in/yifei-s", url: "https://www.linkedin.com/in/yifei-s")
   ),
 )
@@ -43,6 +43,7 @@
     Attended: PyCon 2023 (Salt Lake City, UT), WWDC 2023 (Cupertino, CA).
     
     Thesis: TBD.
+
     Advisor: TBD.
   ]
 
@@ -55,6 +56,7 @@
     Attended: CppCon 2021 (Denver, CO), PyCon 2022 (Salt Lake City, UT), DockerCon 2022 (Palo Alto, CA), HackMIT 2022 (Boston, MA).
     
     Thesis: #link("https://ccs.neu.edu/~ysun/publications/system-and-methods-to-determine-mecfs-and-longcovid-disease-severity-using-wearable-sensor-and-survey-data.pdf")["System and Methods to Determine ME/CFS & Long COVID Disease Severity Using Wearable Sensor & Survey Data"].
+
     Advisor: #link("https://iss.mech.utah.edu/shad-roundy")[Shad Roundy]. Co-advisor: #link("https://robot-learning.cs.utah.edu/thermans")[Tucker Hermans].
   ]
 ]
@@ -95,7 +97,7 @@
     url: "https://github.com/stepbrobd/cv",
   )[
     - This very CV, minimal and declarative, with #link("https://nixos.org")[Nix] and #link("https://github.com/typst/typst")[Typst].
-    - Automated build and release, only on `*.typ` and/or `*.bib` file change(s).
+    - Automated build and release, only on `*.typ` and/or `*.bib` file change(s). The release workflow also triggers revalidation on #link("https://ysun.co/cv")[the CV page of my personal website].
   ]
   
   #contribution(
@@ -113,7 +115,7 @@
     url: "https://github.com/nixos/nix",
   )[
     - Cross-platform purely functional package manager focused on reproducible environment.
-    - Aside from contributions to Nix, also added Nix support and NixPkgs Overlays to multiple other repos/packages: #link("https://github.com/crunchy-labs/crunchy-cli")[`crunchy-cli`], #link("https://github.com/stepbrobd/osu-overlay")[`osu-lazer`], #link("https://github.com/stepbrobd/raycast-overlay")[`raycast`], etc.
+    - Aside from contributions to Nix, also added Nix support and NixPkgs Overlays to multiple other repos/packages: #link("https://github.com/crunchy-labs/crunchy-cli")[`crunchy-cli`], #link("https://github.com/mbientlab/metawear-sdk-python")[`metawear`], #link("https://github.com/stepbrobd/osu-overlay")[`osu-lazer`], #link("https://github.com/stepbrobd/raycast-overlay")[`raycast`], #link("https://github.com/mbientlab/pywarble")[`warble`], etc.
   ]
 
   #contribution(
@@ -122,7 +124,7 @@
     url: "https://github.com/nixos/nixpkgs",
   )[
     - Nix packages collection, 5000+ commits per month.
-    - NixPkgs maintainer, Darwin maintainer. Maintains multiple packages, 10+ merged PR, 10+ reviewed PR.
+    - NixPkgs maintainer, Darwin maintainer. Maintains multiple packages, 25+ merged PR, 10+ reviewed PR.
   ]
 
   #contribution(

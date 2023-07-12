@@ -17,10 +17,15 @@
   #set page(
     paper: "us-letter",
     margin: (x: 1in, y: 1in),
-    header: [
-      #h(1fr)
-      #text(gray)[#contact.name]
-    ],
+    header: locate(
+      loc => if [#loc.page()] == [1] [
+        #h(1fr)
+        #text(gray)[#datetime.today().display("[month repr:long] [day], [year]")]
+      ] else [
+        #h(1fr)
+        #text(gray)[#contact.name]
+      ]
+    ),
     footer: [
       #h(1fr)
       #text(gray)[#counter(page).display("1/1", both: true)]
@@ -49,12 +54,10 @@
   ]
 
   #body
-
-  #align(bottom + right, [#text(gray)[Last updated on #datetime.today().display("[month repr:long] [day], [year]")]])
 ]
 
 #let section(name: none, body) = [
-  #heading(level: 1, upper(name))
+  #heading(level: 2, upper(name))
   #line(length: 100%)
   
   #body
@@ -71,7 +74,7 @@
   location: none,
   body
 ) = [
-  #heading(level: 2, [#institution #h(1fr) #degree])
+  #heading(level: 3, [#institution #h(1fr) #degree])
   #text(attended + h(1fr) + location)
   
   #body
@@ -83,7 +86,7 @@
   worked: none,
   body
 ) = [
-  #heading(level: 2, [#position, #company #h(1fr) #text(size: 10pt, weight: "regular", worked)])
+  #heading(level: 3, [#position, #company #h(1fr) #text(size: 10pt, weight: "regular", worked)])
 
   #body
 ]
@@ -94,7 +97,7 @@
   url: none,
   body
 ) = [
-  #heading(level: 2, [#project #h(1fr) #link(url)[#text(size: 10pt, weight: "regular", display)]])
+  #heading(level: 3, [#project #h(1fr) #link(url)[#text(size: 10pt, weight: "regular", display)]])
 
   #body
 ]
@@ -108,6 +111,6 @@
   #show bold: name => text(weight: "bold", name)
   #bibliography(style: style, title: none, path)
   #for i in range(keys.len()) {
-    move(dx: 1000%, dy: 1000%, cite(keys.at(i)))
+    hide(cite(keys.at(i)))
   }
 ]
