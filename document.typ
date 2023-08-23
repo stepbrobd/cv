@@ -41,7 +41,7 @@
     ]
     #if show_contact [
       #block(text[
-        #link("tel:" + contact.phone)[#contact.phone] #h(10%) #link("mailto:" + contact.email)[#contact.email]
+        #link("mailto:" + contact.email)[#contact.email] #h(10%) #link("tel:" + contact.phone)[#contact.phone]
       ])
     ]
     #if show_links [
