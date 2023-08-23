@@ -8,7 +8,7 @@
   contact: (
     name: "Yifei Sun",
     phone: "+1 (801) 433-8213",
-    email: "yifei@email.com",
+    email: "ysun@sdf.org",
     orcid: "0000-0002-1591-7458",
   ),
   address: (
@@ -19,7 +19,7 @@
     zip: "97210",
   ),
   links: (
-    (display: "ysun.co", url:"https://ysun.co"),
+    (display: "sdf.org/~ysun", url:"https://sdf.org/~ysun"),
     (display: "github.com/stepbrobd", url: "https://github.com/stepbrobd"),
     (display: "linkedin.com/in/yifei-s", url: "https://www.linkedin.com/in/yifei-s")
   ),
@@ -27,13 +27,13 @@
 
 #section(name: "Research Interests")[
   #interests()[
-    + Formal verification for distributed systems and database systems.
-    + Programming language and concurrent data structure related formal verification and fuzz testing.
-    + IMU data feature extraction and machine learning for robotic systems and healthcare applications.
+    + Formal verification, type theory, especially type based program analysis for modern programming languages.
+    + Distributed systems, database systems, modern programming languages, and concurrent data structures related verification and fuzz testing.
+    + IMU data feature extraction with machine learning for robotic systems and healthcare applications.
   ]
 ]
 
-#section(name: "Education")[
+#section(name: "Educations")[
   #education(
     institution: "Northeastern University",
     degree: "M.Sc. in Computer Science",
@@ -61,7 +61,7 @@
   ]
 ]
 
-#section(name: "Employment")[
+#section(name: "Employments")[
   #employment(
     position: "Research Assistant",
     company: "University of Utah",
@@ -92,39 +92,12 @@
 
 #section(name: "OSS Contributions")[
   #contribution(
-    project: "CV",
-    display: "github.com/stepbrobd/cv",
-    url: "https://github.com/stepbrobd/cv",
+    project: "Nix and NixPkgs",
+    display: "github.com/nixos/{nix,nixpkgs}",
+    url: "https://github.com/nixos",
   )[
-    - This very CV, minimal and declarative, with #link("https://nixos.org")[Nix] and #link("https://github.com/typst/typst")[Typst].
-    - Automated build and release, only on `*.typ` and/or `*.bib` file change(s). The release workflow also triggers revalidation on #link("https://ysun.co/cv")[the CV page of my personal website].
-  ]
-  
-  #contribution(
-    project: "MetaProcessor",
-    display: "github.com/metaprocessor/metaprocessor",
-    url: "https://github.com/metaprocessor/metaprocessor",
-  )[
-    - Contributor, code owner. Package published to PyPI.
-    - Data collection pipeline developed for MbientLab MetaMotion series IMUs. Collected terabyte-level IMU data in a joint research project in collaboration with the Bateman Horne Center.
-  ]
-
-  #contribution(
-    project: "Nix",
-    display: "github.com/nixos/nix",
-    url: "https://github.com/nixos/nix",
-  )[
-    - Cross-platform purely functional package manager focused on reproducible environment.
+    - Cross-platform purely functional package manager focused on reproducible environment. NixPkgs maintainer, Darwin maintainer. Maintains 10+ packages, 25+ merged PR, 10+ reviewed PR.
     - Aside from contributions to Nix, also added Nix support and NixPkgs Overlays to multiple other repos/packages: #link("https://github.com/crunchy-labs/crunchy-cli")[`crunchy-cli`], #link("https://github.com/mbientlab/metawear-sdk-python")[`metawear`], #link("https://github.com/stepbrobd/osu-overlay")[`osu-lazer`], #link("https://github.com/stepbrobd/raycast-overlay")[`raycast`], #link("https://github.com/mbientlab/pywarble")[`warble`], etc.
-  ]
-
-  #contribution(
-    project: "NixPkgs",
-    display: "github.com/nixos/nixpkgs",
-    url: "https://github.com/nixos/nixpkgs",
-  )[
-    - Nix packages collection, 5000+ commits per month.
-    - NixPkgs maintainer, Darwin maintainer. Maintains multiple packages, 25+ merged PR, 10+ reviewed PR.
   ]
 
   #contribution(
@@ -135,6 +108,15 @@
     - Proof of concept Go static race checker based on extracting structural operational semantics rules and applying the rule sets to perform static race detection.
     - As a static race checker, false positives are expected. The detection is done by a stateful traversal of provided Go source file's abstract syntax tree.
   ]
+
+  #contribution(
+    project: "MetaProcessor",
+    display: "github.com/stepbrobd/metaprocessor",
+    url: "https://github.com/stepbrobd/metaprocessor",
+  )[
+    - Contributor, code owner. Package published to PyPI.
+    - Data collection pipeline developed for MbientLab MetaMotion series IMUs. Collected terabytes of IMU data in a joint research project in collaboration with the Bateman Horne Center.
+  ]
 ]
 
 #section(name: "Publications")[
@@ -143,8 +125,8 @@
     style: "ieee",
     bold: "Y. Sun",
     keys: (
-      "2023-05-01",
       "2023-07-01",
+      "2023-05-01",
     ),
   )
 ]
