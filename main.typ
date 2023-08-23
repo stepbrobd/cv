@@ -7,7 +7,7 @@
   
   contact: (
     name: "Yifei Sun",
-    phone: "+1 (801) 433-8213",
+    phone: "+18014338213",
     email: "ysun@sdf.org",
     orcid: "0000-0002-1591-7458",
   ),
@@ -20,8 +20,8 @@
   ),
   links: (
     (display: "sdf.org/~ysun", url:"https://sdf.org/~ysun"),
-    (display: "github.com/stepbrobd", url: "https://github.com/stepbrobd"),
-    (display: "linkedin.com/in/yifei-s", url: "https://www.linkedin.com/in/yifei-s")
+    (display: "sdf.org/~ysun/github", url: "https://sdf.org/~ysun/github"),
+    (display: "sdf.org/~ysun/linkedin", url: "https://sdf.org/~ysun/linkedin"),
   ),
 )
 
