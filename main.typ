@@ -40,7 +40,7 @@
     attended: "2023/09 - 2024/12",
     location: "Boston, MA, USA",
   )[
-    Attended: PyCon 2023 (Salt Lake City, UT), WWDC 2023 (Cupertino, CA), HackZurich 2023 (Zürich, Switzerland).
+    Attended: PyCon 2023 (Salt Lake City, UT), WWDC 2023 (Cupertino, CA), HackZurich 2023 (Zürich, Switzerland), ARIN 52 (San Diego, CA).
     
     Thesis: TBD.
 
