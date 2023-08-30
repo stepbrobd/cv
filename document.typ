@@ -91,13 +91,13 @@
   #body
 ]
 
-#let contribution(
-  project: none,
+#let project(
+  name: none,
   display: none,
   url: none,
   body
 ) = [
-  #heading(level: 3, [#project #h(1fr) #link(url)[#text(size: 10pt, weight: "regular", display)]])
+  #heading(level: 3, [#name #h(1fr) #link(url)[#text(size: 10pt, weight: "regular", display)]])
 
   #body
 ]

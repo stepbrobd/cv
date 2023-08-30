@@ -90,9 +90,18 @@
   ]
 ]
 
-#section(name: "OSS Contributions")[
-  #contribution(
-    project: "Nix and NixPkgs",
+#section(name: "Projects")[
+  #project(
+    name: "AS10779",
+    display: "whois.arin.net/rest/asn/as10779",
+    url: "https://whois.arin.net/rest/asn/as10779",
+  )[
+    - Operator of AS10779. Operates a block of /48 IPv6 and two blocks of /24 IPv4 pending assignment from RIR (ARIN).
+    - 10 Gbps uplink, 10 Gbps downlink, multiple peering sessions awiting countersignatures. Open peering policy, if you are interested in peering, please contact me using the information above.
+  ]
+
+  #project(
+    name: "Nix and NixPkgs",
     display: "github.com/nixos/{nix,nixpkgs}",
     url: "https://github.com/nixos",
   )[
@@ -100,8 +109,8 @@
     - Aside from contributions to Nix, also added Nix support and NixPkgs Overlays to multiple other repos/packages: #link("https://github.com/crunchy-labs/crunchy-cli")[`crunchy-cli`], #link("https://github.com/mbientlab/metawear-sdk-python")[`metawear`], #link("https://github.com/stepbrobd/osu-overlay")[`osu-lazer`], #link("https://github.com/stepbrobd/raycast-overlay")[`raycast`], #link("https://github.com/mbientlab/pywarble")[`warble`], etc.
   ]
 
-  #contribution(
-    project: "SRD",
+  #project(
+    name: "SRD",
     display: "github.com/stepbrobd/srd",
     url: "https://github.com/stepbrobd/srd",
   )[
@@ -109,8 +118,8 @@
     - As a static race checker, false positives are expected. The detection is done by a stateful traversal of provided Go source file's abstract syntax tree.
   ]
 
-  #contribution(
-    project: "MetaProcessor",
+  #project(
+    name: "MetaProcessor",
     display: "github.com/stepbrobd/metaprocessor",
     url: "https://github.com/stepbrobd/metaprocessor",
   )[
