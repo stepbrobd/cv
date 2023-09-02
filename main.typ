@@ -96,8 +96,8 @@
     display: "whois.arin.net/rest/asn/as10779",
     url: "https://whois.arin.net/rest/asn/as10779",
   )[
-    - Operator of AS10779. Operates a block of /48 IPv6 and two blocks of /24 IPv4 pending assignment from RIR (ARIN).
-    - 10 Gbps uplink, 10 Gbps downlink, multiple peering sessions awiting countersignatures. Open peering policy, if you are interested in peering, please contact me using the information above.
+    - Operator of AS10779, manages 23.161.104.0/24 and 2620:BE:A000::/48, one IPv4 /24 pending assignment from RIR (ARIN).
+    - 10 Gbps uplink, 10 Gbps downlink, Unicast, BGP sessions established with multiple cloud providers.
   ]
 
   #project(
