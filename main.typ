@@ -93,11 +93,11 @@
 #section(name: "Projects")[
   #project(
     name: "AS10779",
-    display: "whois.arin.net/rest/asn/as10779",
-    url: "https://whois.arin.net/rest/asn/as10779",
+    display: "as10779.net",
+    url: "https://as10779.net",
   )[
-    - Operator of AS10779, manages 23.161.104.0/24 and 2620:BE:A000::/48, one IPv4 /24 pending assignment from RIR (ARIN).
-    - 10 Gbps uplink, 10 Gbps downlink, Unicast, BGP sessions established with multiple cloud providers.
+    - Operator of AS10779, managing #link("https://rdap.arin.net/registry/ip/23.161.104.0")[`23.161.104.0/24`] and #link("https://rdap.arin.net/registry/ip/2620:be:a000::")[`2620:BE:A000::/48`], one other IPv4 /24 block pending assignment from RIR (ARIN).
+    - Research network, 10 Gbps uplink, tunneled downlink (Tailscale, WireGuard), more information available at #link("https://bgp.he.net/as10779")[Hurricane Electric BGP Toolkit].
   ]
 
   #project(
@@ -120,11 +120,11 @@
 
   #project(
     name: "MetaProcessor",
-    display: "github.com/stepbrobd/metaprocessor",
-    url: "https://github.com/stepbrobd/metaprocessor",
+    display: "metaprocessor.org",
+    url: "https://metaprocessor.org",
   )[
-    - Contributor, code owner. Package published to PyPI.
-    - Data collection pipeline developed for MbientLab MetaMotion series IMUs. Collected terabytes of IMU data in a joint research project in collaboration with the Bateman Horne Center.
+    - Author and maintainer of the data collection system used at the #link("https://batemanhornecenter.org")[Bateman Horne Center], a non-profit research center focusing on the diagnosis and treatment of myalgic encephalomyelitis/chronic fatigue syndrome (ME/CFS), fibromyalgia (FM), and other related comorbidities.
+    - Data collection pipeline developed for MbientLab MetaMotion series IMUs. Collected and processed terabytes of IMU data in multiple joint research projects between University of Utah #link("https://iss.mech.utah.edu")[ISS Lab] and  #link("https://batemanhornecenter.org")[Bateman Horne Center] (other ongoing projects are still using MetaProcessor).
   ]
 ]
 
