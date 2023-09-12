@@ -40,6 +40,8 @@
     attended: "2023/09 - 2024/12",
     location: "Boston, MA, USA",
   )[
+    *Google CSRMP Fellow*, 2023b.
+
     Attended: PyCon 2023 (Salt Lake City, UT), WWDC 2023 (Cupertino, CA), HackZurich 2023 (Zürich, Switzerland), ARIN 52 (San Diego, CA).
     
     Thesis: TBD.
@@ -53,6 +55,8 @@
     attended: "2019/08 - 2023/05",
     location: "Salt Lake City, UT, USA",
   )[
+    *Academic Excellence Scholarship*, 2019-2023.
+
     Attended: CppCon 2021 (Denver, CO), PyCon 2022 (Salt Lake City, UT), DockerCon 2022 (Palo Alto, CA), HackMIT 2022 (Boston, MA).
     
     Thesis: #link("https://ysun.co/publication/system-and-methods-to-determine-mecfs-and-longcovid-disease-severity-using-wearable-sensor-and-survey-data.pdf")["System and Methods to Determine ME/CFS & Long COVID Disease Severity Using Wearable Sensor & Survey Data"].
