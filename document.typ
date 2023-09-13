@@ -111,6 +111,7 @@
   #show bold: name => text(weight: "bold", name)
   #bibliography(style: style, title: none, path)
   #for i in range(keys.len()) {
+    set text(0pt)
     hide(cite(keys.at(i)))
   }
 ]
