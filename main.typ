@@ -1,10 +1,6 @@
-#import "document.typ": *
+#import "cv.typ": *
 
 #show: cv.with(
-  show_contact: true,
-  show_address: true,
-  show_links: true,
-  
   contact: (
     name: "Yifei Sun",
     phone: "+18014338213",
@@ -134,12 +130,7 @@
 
 #section(name: "Publications")[
   #publications(
-    path: "publications.bib",
-    style: "ieee",
+    path: "list.yml",
     bold: "Y. Sun",
-    keys: (
-      "2023-07-01",
-      "2023-05-01",
-    ),
   )
 ]

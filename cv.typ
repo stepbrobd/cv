@@ -1,8 +1,4 @@
 #let cv(
-  show_address: none,
-  show_contact: none,
-  show_links: none,
-  
   address: none,
   contact: none,  
   links: none,
@@ -34,23 +30,17 @@
 
   #align(center)[
     #block(heading(level: 1, upper(contact.name)))
-    #if show_address [
-      #block(text[
-        #address.line1, #address.line2, #address.city, #address.state #address.zip
-      ])
-    ]
-    #if show_contact [
-      #block(text[
-        #link("mailto:" + contact.email)[#contact.email] #h(10%) #link("tel:" + contact.phone)[#contact.phone]
-      ])
-    ]
-    #if show_links [
-      #grid(
-        for i in range(links.len()) {
-          link(links.at(i).url)[#links.at(i).display] + h(10%)
-        } + h(-10%)
-      )
-    ]
+    #block(text[
+      #address.line1, #address.line2, #address.city, #address.state #address.zip
+    ])
+    #block(text[
+      #link("mailto:" + contact.email)[#contact.email] #h(10%) #link("tel:" + contact.phone)[#contact.phone]
+    ])
+    #grid(
+      for i in range(links.len()) {
+        link(links.at(i).url)[#links.at(i).display] + h(10%)
+      } + h(-10%)
+    )
   ]
 
   #body
@@ -104,14 +94,8 @@
 
 #let publications(
   path: none,
-  style: none,
   bold: none,
-  keys: none,
 ) = [
   #show bold: name => text(weight: "bold", name)
-  #bibliography(style: style, title: none, path)
-  #for i in range(keys.len()) {
-    set text(0pt)
-    hide(cite(keys.at(i)))
-  }
+  #bibliography(title: none, style: "ieee", full: true, path)
 ]
