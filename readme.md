@@ -13,7 +13,7 @@ curl https://api.github.com/repos/stepbrobd/cv/releases/latest | jq -r ".assets[
 With Nix:
 
 ```shell
-nix run github:typst/typst -- compile main.typ cv.pdf
+nix build github:stepbrobd/cv
 ```
 
 ## License
