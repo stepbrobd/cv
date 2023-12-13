@@ -6,8 +6,8 @@ permissions:
 on:
   workflow_dispatch:
   push:
-    branches: [ "master" ]
-    paths: [ "*.typ", "*.yml", "*.bib" ]
+    branches: ["master"]
+    paths: ["*.typ", "*.yml", "*.bib"]
 
 jobs:
   Workflow:
@@ -16,15 +16,17 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-  
+
       - name: Install Nix
-        uses: cachix/install-nix-action@v23
-        
+        uses: cachix/install-nix-action@v24
+        with:
+          nix_path: nixpkgs=channel:nixpkgs-unstable
+
       - name: Magic Cache
         uses: determinatesystems/magic-nix-cache-action@v2
 
       - name: Build
-        run: nix run github:typst/typst -- compile main.typ cv.pdf
+        run: nix run nixpkgs#typst -- compile main.typ cv.pdf
 
       - name: Tag
         run: echo "TAG=$(date +%Y.%m.%d.%H.%M.%S)" >> ${GITHUB_ENV}
