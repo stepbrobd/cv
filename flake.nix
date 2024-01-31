@@ -37,6 +37,11 @@
         ];
       };
 
-      formatter = pkgs.nixpkgs-fmt;
+      formatter = pkgs.writeShellScriptBin "formatter" ''
+        set -eoux pipefail
+        shopt -s globstar
+        ${pkgs.nixpkgs-fmt}/bin/nixpkgs-fmt .
+        ${pkgs.typstfmt}/bin/typstfmt **/*.typ
+      '';
     });
 }
