@@ -4,22 +4,22 @@
   contact: (
     name: "Yifei Sun",
     phone: "+18014338213",
-    email: "ysun@sdf.org",
+    email: "ysun@ccs.neu.edu",
     orcid: "0000-0002-1591-7458",
   ),
   address: (
-    line1: "3055 NW Yeon Ave",
-    line2: "PMB 712",
-    city: "Portland",
-    state: "OR",
-    zip: "97210",
+    line1: "214 West Village H",
+    line2: "440 Huntington Ave",
+    city: "Boston",
+    state: "MA",
+    zip: "02115",
   ),
   links: (
-    (display: "sdf.org/~ysun", url: "https://sdf.org/~ysun"),
-    (display: "sdf.org/~ysun/github", url: "https://sdf.org/~ysun/github"),
+    (display: "ccs.neu.edu/~ysun", url: "https://ccs.neu.edu/~ysun"),
+    (display: "github.com/stepbrobd", url: "https://github.com/stepbrobd"),
     (
-      display: "sdf.org/~ysun/linkedin",
-      url: "https://sdf.org/~ysun/linkedin",
+      display: "linkedin.com/in/yifei-s",
+      url: "https://www.linkedin.com/in/yifei-s",
     ),
   ),
 )
@@ -29,8 +29,8 @@
 )[
   #interests(
     )[
+    - Distributed systems related formal verification and program analysis
     - Type theory and type based program analysis for modern programming languages
-    - Distributed systems and consistency model verification
   ]
 ]
 
@@ -45,12 +45,10 @@
   )[
     Google CSRMP Fellow, 2023b
 
-    Attended: PyCon 2023 (Salt Lake City, UT), WWDC 2023 (Cupertino, CA), HackZurich
-    2023 (Zürich, Switzerland)
-
     // Thesis: TBD
 
-    // Advisor: TBD
+    Member of #link("https://srg.khoury.northeastern.edu")[Systems Research Group],
+    Advisor: #link("https://www.jiyongshin.info")[Ji-Yong Shin]
   ]
 
   #education(
@@ -61,15 +59,14 @@
   )[
     Academic Excellence Scholarship, 2019-2023
 
-    Attended: CppCon 2021 (Denver, CO), PyCon 2022 (Salt Lake City, UT), HackMIT
-    2022 (Boston, MA)
-
     Thesis: #link(
       "https://ysun.co/pdfs/bachelors-thesis.pdf",
     )[System and Methods to Determine ME/CFS & Long COVID Disease Severity Using
       Wearable Sensor & Survey Data]
 
-    Advisor: #link("https://iss.mech.utah.edu/shad-roundy")[Shad Roundy], #link("https://robot-learning.cs.utah.edu/thermans")[Tucker Hermans]
+    Member of #link("https://iss.mech.utah.edu")[Integrated Self-Powered Sensing Lab],
+    Advisor: #link("https://iss.mech.utah.edu/shad-roundy")[Shad Roundy],
+    Co-advisor: #link("https://robot-learning.cs.utah.edu/thermans")[Tucker Hermans]
   ]
 ]
 
@@ -77,13 +74,24 @@
   name: "Employments",
 )[
   // #employment(
-  //   position: "Teaching Assistant",
-  //   company: "Northeastern University",
-  //   worked: "2024/01 - 2024/05",
+  //   position: "Visiting Researcher",
+  //   company: "University of Tokyo",
+  //   worked: "2024/05 - 2024/09",
   // )[
-  //   -
-  //   -
+  //   - Member of #link("https://www.csg.ci.i.u-tokyo.ac.jp/en")[Computing Software Group], Advisor: #link("https://tugawa.github.io/index-e.html")[Tomoharu Ugawa]
+  //   - High-performance managed runtime systems
   // ]
+
+  #employment(
+    position: "Teaching Assistant",
+    company: "Northeastern University",
+    worked: "2024/01 - 2024/05",
+  )[
+    - #link("https://3700.network/docs/syllabus")[CS 3700]: Networks and Distributed
+      Systems
+    - Topics include routing, congestion control, DNS, network security, and
+      applications such as distributed KV stores, P2P and CDN
+  ]
 
   #employment(
     position: "Research Assistant",
@@ -132,8 +140,7 @@
 )[
 - Operator of AS10779, managing #link("https://rdap.arin.net/registry/ip/23.161.104.0")[`23.161.104.0/24`] and #link(
     "https://rdap.arin.net/registry/ip/2620:be:a000::",
-  )[`2620:BE:A000::/48`]
-- Research network, 1 Gbps uplink, tunneled downlink (Tailscale, WireGuard)
+  )[`2620:BE:A000::/48`], research network
 ]
 
 #project(
@@ -141,9 +148,8 @@
   display: "github.com/stepbrobd/finch",
   url: "https://github.com/stepbrobd/finch",
 )[
-  - A neural net framework/visualizer written in Go
-  - The framework uses genetic algorithm to mutate weights to achieve desired
-    results
+  - A neural net framework/visualizer written in Go, the framework uses genetic
+    algorithm to mutate weights to achieve desired results
 ]
 
 #project(
@@ -151,13 +157,8 @@
   display: "github.com/nixos/{nix,nixpkgs}",
   url: "https://github.com/nixos",
 )[
-- Nixpkgs maintainer, Darwin maintainer, maintains 10+ packages, 40+ merged PR,
-  20+ reviewed PR
-- Added Nix support: #link("https://github.com/crunchy-labs/crunchy-cli")[`crunchy-cli`], #link("https://github.com/stepbrobd/deno2nix")[`deno2nix`], #link("https://github.com/mbientlab/metawear-sdk-python")[`metawear`], #link("https://github.com/mbientlab/pywarble")[`warble`], #link(
-    "https://github.com/NixOS/nixpkgs/blob/master/pkgs/tools/wayland/xwaylandvideobridge/default.nix",
-  )[`xwaylandvideobridge`], #link(
-    "https://github.com/stepbrobd/nixpkgs/blob/master/pkgs/applications/science/logic/z3/default.nix",
-  )[`z3-solver`]
+  - Nixpkgs maintainer, Darwin maintainer, maintains 10+ packages, 40+ merged PR,
+    20+ reviewed PR
 ]
 
 #project(
@@ -166,9 +167,8 @@
   url: "https://github.com/stepbrobd/srd",
 )[
   - Proof of concept Go static race checker based on predefined structural
-    operational semantics rules
-  - Applies rule sets when performing stateful AST traversal to achieve static race
-    detection
+    operational semantics rules, applies rule sets when performing stateful AST
+    traversal to achieve static race detection
 ]
 ]
 
