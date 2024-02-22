@@ -8,7 +8,7 @@
     orcid: "0000-0002-1591-7458",
   ),
   address: (
-    line1: "214 West Village H",
+    line1: "214 WVH",
     line2: "440 Huntington Ave",
     city: "Boston",
     state: "MA",
@@ -25,30 +25,38 @@
 )
 
 #section(
-  name: "Research Interests",
+  name: "Research Interest",
 )[
-  #interests(
-    )[
-    - Distributed systems related formal verification and program analysis
+  #interests[
+    - Distributed systems related formal verifications and program analysis
+    - High-performance managed runtime systems
     - Type theory and type based program analysis for modern programming languages
   ]
 ]
 
 #section(
-  name: "Educations",
+  name: "Education",
 )[
   #education(
     institution: "Northeastern University",
     degree: "M.Sc. in Computer Science",
-    attended: "2023/09 - 2024/12",
+    attended: "2023/09 - 2025/04",
     location: "Boston, MA, USA",
   )[
     Google CSRMP Fellow, 2023b
 
-    // Thesis: TBD
-
-    Member of #link("https://srg.khoury.northeastern.edu")[Systems Research Group],
+    Member of the #link("https://srg.khoury.northeastern.edu")[Systems Research Group],
     Advisor: #link("https://www.jiyongshin.info")[Ji-Yong Shin]
+  ]
+
+  #education(
+    institution: "University of Tokyo",
+    degree: "Visiting Research Student",
+    attended: "2024/05 - 2024/09",
+    location: "Tokyo, Japan",
+  )[
+    Member of the #link("https://www.csg.ci.i.u-tokyo.ac.jp/en")[Computing Software Group],
+    Advisor: #link("https://tugawa.github.io/index-e.html")[Tomoharu Ugawa]
   ]
 
   #education(
@@ -64,24 +72,15 @@
     )[System and Methods to Determine ME/CFS & Long COVID Disease Severity Using
       Wearable Sensor & Survey Data]
 
-    Member of #link("https://iss.mech.utah.edu")[Integrated Self-Powered Sensing Lab],
+    Member of the #link("https://iss.mech.utah.edu")[Integrated Self-Powered Sensing Lab],
     Advisor: #link("https://iss.mech.utah.edu/shad-roundy")[Shad Roundy],
     Co-advisor: #link("https://robot-learning.cs.utah.edu/thermans")[Tucker Hermans]
   ]
 ]
 
 #section(
-  name: "Employments",
+  name: "Employment",
 )[
-  // #employment(
-  //   position: "Visiting Researcher",
-  //   company: "University of Tokyo",
-  //   worked: "2024/05 - 2024/09",
-  // )[
-  //   - Member of #link("https://www.csg.ci.i.u-tokyo.ac.jp/en")[Computing Software Group], Advisor: #link("https://tugawa.github.io/index-e.html")[Tomoharu Ugawa]
-  //   - High-performance managed runtime systems
-  // ]
-
   #employment(
     position: "Teaching Assistant",
     company: "Northeastern University",
@@ -124,23 +123,30 @@
   )[
     - Competitive robotic system design/modeling, embedded system programming, control
       system programming, and computer vision
-    - Utilized STM32F4 platform to build out a robotic system with wireless image
-      transmission, image recognition, automated reasoning, and task scheduling
-      capabilities, followed predefined rule sets to complete tasks
+    - Champion of the 2018 DJI RoboMaster Summer Camp
   ]
 ]
 
 #section(
-  name: "Projects",
+  name: "Project",
 )[
 #project(
   name: "AS10779",
   display: "as10779.net",
   url: "https://as10779.net",
 )[
-- Operator of AS10779, managing #link("https://rdap.arin.net/registry/ip/23.161.104.0")[`23.161.104.0/24`] and #link(
+- Operator of AS10779, #link("https://rdap.arin.net/registry/ip/23.161.104.0")[`23.161.104.0/24`] and #link(
     "https://rdap.arin.net/registry/ip/2620:be:a000::",
-  )[`2620:BE:A000::/48`], research network
+  )[`2620:BE:A000::/48`]
+]
+
+#project(
+  name: "Consistency",
+  display: "github.com/stepbrobd/consistency",
+  url: "https://github.com/stepbrobd/consistency-z3",
+)[
+  - A verification tool for testing the compositional consistency guarantees of
+    distributed systems
 ]
 
 #project(
@@ -148,17 +154,7 @@
   display: "github.com/stepbrobd/finch",
   url: "https://github.com/stepbrobd/finch",
 )[
-  - A neural net framework/visualizer written in Go, the framework uses genetic
-    algorithm to mutate weights to achieve desired results
-]
-
-#project(
-  name: "Nix and Nixpkgs",
-  display: "github.com/nixos/{nix,nixpkgs}",
-  url: "https://github.com/nixos",
-)[
-  - Nixpkgs maintainer, Darwin maintainer, maintains 10+ packages, 40+ merged PR,
-    20+ reviewed PR
+  - A genetic algorithm framework and visualizer written in Go
 ]
 
 #project(
@@ -166,12 +162,11 @@
   display: "github.com/stepbrobd/srd",
   url: "https://github.com/stepbrobd/srd",
 )[
-  - Proof of concept Go static race checker based on predefined structural
-    operational semantics rules, applies rule sets when performing stateful AST
-    traversal to achieve static race detection
+  - Go static date race checking with stateful AST traversal based on structural
+    operational semantics
 ]
 ]
 
-#section(name: "Publications")[
+#section(name: "Publication")[
   #publications(path: "list.yml", bold: "Y. Sun")
 ]
