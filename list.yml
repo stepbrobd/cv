@@ -1,20 +1,15 @@
-2023-05-03:
-  type: Thesis
+sun2023thesis:
+  type: thesis
   title: System and Methods to Determine ME/CFS & Long COVID Disease Severity Using Wearable Sensor & Survey Data
-  author:
-    - Sun, Yifei
-  school: University of Utah
-  year: 2023
-  month: may
-  note: Bachelor's Thesis
+  author: Sun, Yifei
+  date: 2023-05
+  organization: University of Utah
 
-2024-03-07:
-  type: Article
-  title: System and Methods to Determine ME/CFS & Long COVID Disease Severity Using a Wearable Sensor
+sun2024method:
+  type: misc
+  title: System and Method to Determine ME/CFS and Long COVID Disease Severity Using a Wearable Sensor
   author:
-    - Sun, Yifei
-    - Vernon, Suzanne
-    - Roundy, Shad
-  journal: IEEE Transactions on Biomedical Engineering
-  year: 2023
-  note: Manuscript in review
+  - Sun, Yifei
+  - Vernon, Suzanne D.
+  - Roundy, Shad
+  date: 2024-04
