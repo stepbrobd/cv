@@ -55,6 +55,8 @@
     attended: "2024/05 - 2024/09",
     location: "Tokyo, Japan",
   )[
+    NixOS Foundation Summer of Nix NGIpkgs Workgroup, 2024
+
     Member of the #link("https://www.csg.ci.i.u-tokyo.ac.jp/en")[Computing Software Group],
     Advisor: #link("https://tugawa.github.io/index-e.html")[Tomoharu Ugawa]
   ]
@@ -86,10 +88,12 @@
     company: "Northeastern University",
     worked: "2024/01 - 2024/05",
   )[
-    - #link("https://3700.network/docs/syllabus")[CS 3700]: Networks and Distributed
-      Systems
-    - Topics include routing, congestion control, DNS, network security, and
-      applications such as distributed KV stores, P2P and CDN
+    - Graduate TA for #link("https://3700.network/docs/syllabus")[CS 3700]: Networks
+      and Distributed Systems, responsible for office hours, grading (autograder setup
+      and debugging), and lab assignments
+    - Topics including routing, congestion control, network security, and distributed
+      protocols like NTP and Raft, and general network programming with Python,
+      Haskell, and Go
   ]
 
   #employment(
@@ -112,8 +116,8 @@
   )[
     - Enterprise system administration, managed 1000+ university-owned
       iOS/iPadOS/macOS/tvOS, Windows, and Linux systems
-    - Created multiple automation tools to perform unattended on-boarding,
-      off-boarding, package licensing, updates, and distributions
+    - Created multiple automation tools to perform multi-platform unattended
+      on-boarding, off-boarding, package licensing, updates, and distributions
   ]
 
   #employment(
@@ -121,9 +125,10 @@
     company: "DJI",
     worked: "2018/07 - 2018/08",
   )[
+    - Champion of the 2018 DJI RoboMaster Summer Camp Competition
     - Competitive robotic system design/modeling, embedded system programming, control
-      system programming, and computer vision
-    - Champion of the 2018 DJI RoboMaster Summer Camp
+      system programming, and computer vision, led two teams of 5 to design and build
+      a STM32F4 based robotic system to perform predefined tasks
   ]
 ]
 
@@ -132,12 +137,13 @@
 )[
 #project(
   name: "AS10779",
-  display: "as10779.net",
-  url: "https://as10779.net",
+  display: "ysun.co/10779",
+  url: "https://ysun.co/10779",
 )[
 - Operator of AS10779, #link("https://rdap.arin.net/registry/ip/23.161.104.0")[`23.161.104.0/24`] and #link(
     "https://rdap.arin.net/registry/ip/2620:be:a000::",
-  )[`2620:BE:A000::/48`]
+  )[`2620:BE:A000::/48`] (under ARIN)
+- Experimental research network, tunneled peering with WireGuard served with NixOS
 ]
 
 #project(
@@ -147,6 +153,9 @@
 )[
   - A verification tool for testing the compositional consistency guarantees of
     distributed systems
+  - Z3 based verification tool to axiomatically check the compositions of multiple
+    weak consistency semantics and the final semantics' theoretical consistency
+    guarantees and safety properties
 ]
 
 #project(
@@ -155,6 +164,8 @@
   url: "https://github.com/stepbrobd/finch",
 )[
   - A genetic algorithm framework and visualizer written in Go
+  - User-definable genetic algorithm configurations, including population size,
+    layer size (input, hidden, output), mutation rate, and training/testing data
 ]
 
 #project(
@@ -162,8 +173,12 @@
   display: "github.com/stepbrobd/srd",
   url: "https://github.com/stepbrobd/srd",
 )[
-  - Go static date race checking with stateful AST traversal based on structural
-    operational semantics
+  - Proof of concept Go static race checker based on extracting structural
+    operational semantics rules and applying the rule sets to perform static race
+    detection.
+  - As a static race checker, false positives/negatives are expected. The detection
+    is done by a stateful traversal of provided Go source file's abstract syntax
+    tree.
 ]
 ]
 
