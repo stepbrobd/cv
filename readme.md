@@ -16,6 +16,14 @@ With Nix:
 nix build github:stepbrobd/cv
 ```
 
+## Provenance
+
+Download the latest release (`cv.pdf`), then execute the following command:
+
+```shell
+gh attestation --repo stepbrobd/cv verify cv.pdf
+```
+
 ## License
 
 The contents inside this repository, excluding all submodules, are licensed under the [MIT License](license.md).
