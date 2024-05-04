@@ -1,6 +1,7 @@
 name: Release
 
 permissions:
+  actions: write
   contents: write
   id-token: write
   attestations: write
@@ -44,3 +45,8 @@ jobs:
         uses: actions/attest-build-provenance@v1
         with:
           subject-path: cv.pdf
+
+      - name: PGS
+        run: gh workflow --repo stepbrobd/ysun run pgs.yml
+        env:
+          GH_TOKEN: ${{ github.token }}
