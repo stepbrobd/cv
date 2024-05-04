@@ -2,24 +2,12 @@
 
 #show: cv.with(
   contact: (
-    name: "Yifei Sun",
-    phone: "+18014338213",
-    email: "ysun@ccs.neu.edu",
-    orcid: "0000-0002-1591-7458",
-  ),
-  address: (
-    line1: "214 WVH",
-    line2: "440 Huntington Ave",
-    city: "Boston",
-    state: "MA",
-    zip: "02115",
-  ),
-  links: (
-    (display: "ccs.neu.edu/~ysun", url: "https://ccs.neu.edu/~ysun"),
-    (display: "github.com/stepbrobd", url: "https://github.com/stepbrobd"),
-    (
-      display: "linkedin.com/in/yifei-s",
-      url: "https://www.linkedin.com/in/yifei-s",
+    name: "Yifei Sun", phone: "+18014338213", email: "ysun@ccs.neu.edu", orcid: "0000-0002-1591-7458",
+  ), address: (
+    line1: "214 WVH", line2: "440 Huntington Ave", city: "Boston", state: "MA", zip: "02115",
+  ), links: (
+    (display: "ccs.neu.edu/~ysun", url: "https://ccs.neu.edu/~ysun"), (display: "github.com/stepbrobd", url: "https://github.com/stepbrobd"), (
+      display: "linkedin.com/in/yifei-s", url: "https://www.linkedin.com/in/yifei-s",
     ),
   ),
 )
@@ -38,10 +26,7 @@
   name: "Education",
 )[
   #education(
-    institution: "Northeastern University",
-    degree: "M.Sc. in Computer Science",
-    attended: "2023/09 - 2025/04",
-    location: "Boston, MA, USA",
+    institution: "Northeastern University", degree: "M.Sc. in Computer Science", attended: "2023/09 - 2025/04", location: "Boston, MA, USA",
   )[
     Google CSRMP Fellow, 2023b
 
@@ -50,10 +35,7 @@
   ]
 
   #education(
-    institution: "University of Tokyo",
-    degree: "Visiting Research Student",
-    attended: "2024/05 - 2024/09",
-    location: "Tokyo, Japan",
+    institution: "University of Tokyo", degree: "Visiting Research Student", attended: "2024/05 - 2024/09", location: "Tokyo, Japan",
   )[
     NixOS Foundation Summer of Nix NGIpkgs Workgroup, 2024
 
@@ -62,10 +44,7 @@
   ]
 
   #education(
-    institution: "University of Utah",
-    degree: "B.Sc. in Computer Science",
-    attended: "2019/08 - 2023/05",
-    location: "Salt Lake City, UT, USA",
+    institution: "University of Utah", degree: "B.Sc. in Computer Science", attended: "2019/08 - 2023/05", location: "Salt Lake City, UT, USA",
   )[
     Academic Excellence Scholarship, 2019-2023
 
@@ -84,9 +63,7 @@
   name: "Employment",
 )[
   #employment(
-    position: "Teaching Assistant",
-    company: "Northeastern University",
-    worked: "2024/01 - 2024/05",
+    position: "Teaching Assistant", company: "Northeastern University", worked: "2024/01 - 2024/05",
   )[
     - Graduate TA for #link("https://3700.network/docs/syllabus")[CS 3700]: Networks
       and Distributed Systems, responsible for office hours, grading (autograder setup
@@ -97,9 +74,7 @@
   ]
 
   #employment(
-    position: "Research Assistant",
-    company: "University of Utah",
-    worked: "2021/08 - 2023/05",
+    position: "Research Assistant", company: "University of Utah", worked: "2021/08 - 2023/05",
   )[
     - Joint research project in collaboration with the Bateman Horne Center's clinical
       research team, developed and managed a new data collection infrastructure
@@ -110,9 +85,7 @@
   ]
 
   #employment(
-    position: "System Administrator",
-    company: "University of Utah",
-    worked: "2019/12 - 2020/09",
+    position: "System Administrator", company: "University of Utah", worked: "2019/12 - 2020/09",
   )[
     - Enterprise system administration, managed 1000+ university-owned
       iOS/iPadOS/macOS/tvOS, Windows, and Linux systems
@@ -121,9 +94,7 @@
   ]
 
   #employment(
-    position: "Intern",
-    company: "DJI",
-    worked: "2018/07 - 2018/08",
+    position: "Intern", company: "DJI", worked: "2018/07 - 2018/08",
   )[
     - Champion of the 2018 DJI RoboMaster Summer Camp Competition
     - Competitive robotic system design/modeling, embedded system programming, control
@@ -136,9 +107,7 @@
   name: "Project",
 )[
 #project(
-  name: "AS10779",
-  display: "ysun.co/10779",
-  url: "https://ysun.co/10779",
+  name: "AS10779", display: "ysun.co/10779", url: "https://ysun.co/10779",
 )[
 - Operator of AS10779, #link("https://rdap.arin.net/registry/ip/23.161.104.0")[`23.161.104.0/24`] and #link(
     "https://rdap.arin.net/registry/ip/2620:be:a000::",
@@ -147,9 +116,7 @@
 ]
 
 #project(
-  name: "Consistency",
-  display: "github.com/stepbrobd/consistency",
-  url: "https://github.com/stepbrobd/consistency-z3",
+  name: "Consistency", display: "github.com/stepbrobd/consistency", url: "https://github.com/stepbrobd/consistency-z3",
 )[
   - A verification tool for testing the compositional consistency guarantees of
     distributed systems
@@ -159,9 +126,7 @@
 ]
 
 #project(
-  name: "Finch",
-  display: "github.com/stepbrobd/finch",
-  url: "https://github.com/stepbrobd/finch",
+  name: "Finch", display: "github.com/stepbrobd/finch", url: "https://github.com/stepbrobd/finch",
 )[
   - A genetic algorithm framework and visualizer written in Go
   - User-definable genetic algorithm configurations, including population size,
@@ -169,9 +134,7 @@
 ]
 
 #project(
-  name: "SRD",
-  display: "github.com/stepbrobd/srd",
-  url: "https://github.com/stepbrobd/srd",
+  name: "SRD", display: "github.com/stepbrobd/srd", url: "https://github.com/stepbrobd/srd",
 )[
   - Proof of concept Go static race checker based on extracting structural
     operational semantics rules and applying the rule sets to perform static race

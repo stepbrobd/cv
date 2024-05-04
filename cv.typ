@@ -5,9 +5,7 @@
   #show link: underline
 
   #set page(
-    paper: "us-letter",
-    margin: (x: 1in, y: 1in),
-    header: locate(
+    paper: "us-letter", margin: (x: 1in, y: 1in), header: locate(
       loc => if [#loc.page()] == [1] [
         #h(1fr)
         #text(gray)[#datetime.today().display("[month repr:long] [day], [year]")]
@@ -15,8 +13,7 @@
         #h(1fr)
         #text(gray)[#contact.name]
       ],
-    ),
-    footer: [
+    ), footer: [
       #h(1fr)
       #text(gray)[#counter(page).display("1/1", both: true)]
     ],
@@ -64,8 +61,7 @@
 
 #let employment(position: none, company: none, worked: none, body) = [
   #heading(
-    level: 3,
-    [#position, #company #h(1fr) #text(size: 10pt, weight: "regular", worked)],
+    level: 3, [#position, #company #h(1fr) #text(size: 10pt, weight: "regular", worked)],
   )
 
   #body
@@ -73,8 +69,7 @@
 
 #let project(name: none, display: none, url: none, body) = [
   #heading(
-    level: 3,
-    [#name #h(1fr) #link(url)[#text(size: 10pt, weight: "regular", display)]],
+    level: 3, [#name #h(1fr) #link(url)[#text(size: 10pt, weight: "regular", display)]],
   )
 
   #body
