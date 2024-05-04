@@ -37,7 +37,7 @@
   #education(
     institution: "University of Tokyo", degree: "Visiting Research Student", attended: "2024/05 - 2024/09", location: "Tokyo, Japan",
   )[
-    NixOS Foundation Summer of Nix NGIpkgs Workgroup, 2024
+    NixOS Foundation Summer of Nix NGIpkgs Working Group, 2024
 
     Member of the #link("https://www.csg.ci.i.u-tokyo.ac.jp/en")[Computing Software Group],
     Advisor: #link("https://tugawa.github.io/index-e.html")[Tomoharu Ugawa]
