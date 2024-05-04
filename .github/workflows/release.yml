@@ -44,3 +44,6 @@ jobs:
         uses: actions/attest-build-provenance@v1
         with:
           subject-path: cv.pdf
+
+      - name: PGS
+        run: gh workflow --repo stepbrobd/ysun run pgs.yml
