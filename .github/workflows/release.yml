@@ -25,7 +25,7 @@ jobs:
           nix_path: nixpkgs=channel:nixpkgs-unstable
 
       - name: Magic Cache
-        uses: determinatesystems/magic-nix-cache-action@v4
+        uses: determinatesystems/magic-nix-cache-action@v6
 
       - name: Build
         run: nix run nixpkgs#typst -- compile main.typ cv.pdf
