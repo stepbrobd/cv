@@ -8,7 +8,9 @@
     paper: "us-letter", margin: (x: 1in, y: 1in), header: locate(
       loc => if [#loc.page()] == [1] [
         #h(1fr)
-        #text(gray)[#datetime.today().display("[month repr:long] [day], [year]")]
+        #text(
+          gray,
+        )[#datetime.today().display("[month repr:short]. [day padding:none], [year]")]
       ] else [
         #h(1fr)
         #text(gray)[#contact.name]

@@ -2,23 +2,20 @@
 
 #show: cv.with(
   contact: (
-    name: "Yifei Sun", phone: "+18014338213", email: "ysun@ccs.neu.edu", orcid: "0000-0002-1591-7458",
+    name: "Yifei Sun", phone: "+18014338213", email: "ysun@hey.com", orcid: "0000-0002-1591-7458",
   ), address: (
     line1: "214 WVH", line2: "440 Huntington Ave", city: "Boston", state: "MA", zip: "02115",
   ), links: (
-    (display: "ccs.neu.edu/~ysun", url: "https://ccs.neu.edu/~ysun"), (display: "github.com/stepbrobd", url: "https://github.com/stepbrobd"), (
+    (display: "ysun.co", url: "https://ysun.co"), (display: "github.com/stepbrobd", url: "https://github.com/stepbrobd"), (
       display: "linkedin.com/in/yifei-s", url: "https://www.linkedin.com/in/yifei-s",
     ),
   ),
 )
 
-#section(
-  name: "Research Interest",
-)[
+#section(name: "Research Interests")[
   #interests[
-    - Distributed systems related formal verifications and program analysis
-    - High-performance managed runtime systems
-    - Type theory and type based program analysis for modern programming languages
+    - Formal verifications on distributed systems.
+    - Type theory and high-performance runtime systems.
   ]
 ]
 
@@ -28,34 +25,26 @@
   #education(
     institution: "Northeastern University", degree: "M.Sc. in Computer Science", attended: "2023/09 - 2025/04", location: "Boston, MA, USA",
   )[
-    Google CSRMP Fellow, 2023b
+    Google CSRMP Fellow, 2023b. NixOS Foundation SoN #link("https://github.com/ngi-nix/ngipkgs")[NGIpkgs] Working
+    Group, 2024.
 
     Member of the #link("https://srg.khoury.northeastern.edu")[Systems Research Group],
-    Advisor: #link("https://www.jiyongshin.info")[Ji-Yong Shin]
-  ]
-
-  #education(
-    institution: "University of Tokyo", degree: "Visiting Research Student", attended: "2024/05 - 2024/09", location: "Tokyo, Japan",
-  )[
-    NixOS Foundation Summer of Nix NGIpkgs Working Group, 2024
-
-    Member of the #link("https://www.csg.ci.i.u-tokyo.ac.jp/en")[Computing Software Group],
-    Advisor: #link("https://tugawa.github.io/index-e.html")[Tomoharu Ugawa]
+    Advisor: #link("https://www.jiyongshin.info")[Ji-Yong Shin].
   ]
 
   #education(
     institution: "University of Utah", degree: "B.Sc. in Computer Science", attended: "2019/08 - 2023/05", location: "Salt Lake City, UT, USA",
   )[
-    Academic Excellence Scholarship, 2019-2023
+    Academic Excellence Scholarship, 2019-2023.
 
     Thesis: #link(
-      "https://ysun.co/pdfs/bachelors-thesis.pdf",
+      "https://ysun.co/assets/static/doc/bt.pdf",
     )[System and Methods to Determine ME/CFS & Long COVID Disease Severity Using
-      Wearable Sensor & Survey Data]
+      Wearable Sensor & Survey Data].
 
     Member of the #link("https://iss.mech.utah.edu")[Integrated Self-Powered Sensing Lab],
     Advisor: #link("https://iss.mech.utah.edu/shad-roundy")[Shad Roundy],
-    Co-advisor: #link("https://robot-learning.cs.utah.edu/thermans")[Tucker Hermans]
+    Co-advisor: #link("https://robot-learning.cs.utah.edu/thermans")[Tucker Hermans].
   ]
 ]
 
@@ -63,74 +52,92 @@
   name: "Employment",
 )[
   #employment(
+    position: "Research Intern", company: "University of Tokyo", worked: "2024/05 - 2024/09",
+  )[
+    - Advised under #link("https://tugawa.github.io/index-e.html")[Tomoharu Ugawa] at
+      the #link("https://www.csg.ci.i.u-tokyo.ac.jp/en")[Computing Software Group],
+      created a framework to apply genetic algorithm with multiple buit-in libraries
+      to improve bytecode handler performance in interpreters (e.g. eJSVM, Ruby, Lua).
+    - Improved and reproduced the method proposed in #link(
+        "https://dl.acm.org/doi/abs/10.1145/3555776.3577712",
+      )[Huang et al. SAC '23], making the framework to be implementation/interpreter
+      agnostic. Initial evaluation showed \~8% and \~50% performance improvement on
+      eJSVM and Ruby, respectively.
+  ]
+
+  #employment(
     position: "Teaching Assistant", company: "Northeastern University", worked: "2024/01 - 2024/05",
   )[
-    - Graduate TA for #link("https://3700.network/docs/syllabus")[CS 3700]: Networks
-      and Distributed Systems, responsible for office hours, grading (autograder setup
-      and debugging), and lab assignments
+    - Graduate TA for #link(
+        "https://3700.network/docs/syllabus",
+      )[CS 3700 - Networks and Distributed Systems] (\~200 enrolled students):
+      Responsible for hosting oﬃce hours, course infrastructure setup/maintenance
+      (autograder setup and debugging), and grading assignments.
     - Topics including routing, congestion control, network security, and distributed
-      protocols like NTP and Raft, and general network programming with Python,
-      Haskell, and Go
+      protocols like NTP and Raft, and general asynchronous network programming with
+      Python, Haskell, and Go.
   ]
 
   #employment(
     position: "Research Assistant", company: "University of Utah", worked: "2021/08 - 2023/05",
   )[
     - Joint research project in collaboration with the Bateman Horne Center's clinical
-      research team, developed and managed a new data collection infrastructure
+      research team, developed and managed a new data collection infrastructure,
+      bringing the overall data collection error rate down to sub 0.25%.
     - The infrastructure aggregats 100+ IMUs, multiple single-board computers and
       high-performance servers, collected terabyte-level motion data, then applied
       sensor fusion, motion analysis, and machine learning techniques on collected
-      time-series and survey data
+      time-series and survey data.
   ]
 
   #employment(
     position: "System Administrator", company: "University of Utah", worked: "2019/12 - 2020/09",
   )[
     - Enterprise system administration, managed 1000+ university-owned
-      iOS/iPadOS/macOS/tvOS, Windows, and Linux systems
+      iOS/iPadOS/macOS/tvOS, Windows, and Linux systems.
     - Created multiple automation tools to perform multi-platform unattended
-      on-boarding, off-boarding, package licensing, updates, and distributions
+      on-boarding, off-boarding, package licensing, updates, and distributions.
   ]
 
   #employment(
     position: "Intern", company: "DJI", worked: "2018/07 - 2018/08",
   )[
-    - Champion of the 2018 DJI RoboMaster Summer Camp Competition
+    - Champion of the 2018 DJI RoboMaster Summer Camp Competition.
     - Competitive robotic system design/modeling, embedded system programming, control
       system programming, and computer vision, led two teams of 5 to design and build
-      a STM32F4 based robotic system to perform predefined tasks
+      a STM32F4 based robotic system to perform predefined tasks.
   ]
 ]
 
 #section(
-  name: "Project",
+  name: "Projects",
 )[
 #project(
   name: "AS10779", display: "ysun.co/10779", url: "https://ysun.co/10779",
 )[
 - Operator of AS10779, #link("https://rdap.arin.net/registry/ip/23.161.104.0")[`23.161.104.0/24`] and #link(
     "https://rdap.arin.net/registry/ip/2620:be:a000::",
-  )[`2620:BE:A000::/48`] (under ARIN)
-- Experimental research network, tunneled peering with WireGuard served with NixOS
+  )[`2620:BE:A000::/48`] (under ARIN).
+- Experimental research network, tunneled peering with WireGuard served with
+  NixOS.
 ]
 
 #project(
   name: "Consistency", display: "github.com/stepbrobd/consistency", url: "https://github.com/stepbrobd/consistency-z3",
 )[
   - A verification tool for testing the compositional consistency guarantees of
-    distributed systems
+    distributed systems.
   - Z3 based verification tool to axiomatically check the compositions of multiple
     weak consistency semantics and the final semantics' theoretical consistency
-    guarantees and safety properties
+    guarantees and safety properties.
 ]
 
 #project(
   name: "Finch", display: "github.com/stepbrobd/finch", url: "https://github.com/stepbrobd/finch",
 )[
-  - A genetic algorithm framework and visualizer written in Go
+  - A genetic algorithm framework and visualizer written in Go.
   - User-definable genetic algorithm configurations, including population size,
-    layer size (input, hidden, output), mutation rate, and training/testing data
+    layer size (input, hidden, output), mutation rate, and training/testing data.
 ]
 
 #project(
@@ -145,6 +152,28 @@
 ]
 ]
 
-#section(name: "Publication")[
-  #publications(path: "list.yml", bold: "Y. Sun")
+#section(
+  name: "Skills",
+)[
+  - *Programming Languages*: Nix, Go, Python, Haskell, C/C++, Shell, JS/TS, Coq,
+    Typst, LaTeX.
+  - *Tools*: Git, NixOS, Docker/Kubernetes, Bird2, WireGuard, Z3, Matplotlib,
+    Pandas, NumPy.
+  - *Languages*: English (native), Mandarin (native), Japanese (intermediate).
+]
+
+#section(
+  name: "Publications",
+)[
+  #set enum(numbering: "[1]")
+  // #publications(path: "list.yml", bold: "Y. Sun")
+
+  + *Y. Sun*, “System and Methods to Determine ME/CFS & Long COVID Disease Severity
+    Using Wearable Sensor & Survey Data”, Bachelor's Thesis, University of Utah,
+    May. 2023.
+
+  + *Y. Sun*, S. D. Vernon, and S. Roundy, “System and Method to Determine ME/CFS
+    and Long COVID Disease Severity Using a Wearable Sensor”. International Journal
+    of Medical Informatics, Under Review. Jun. 2024.
+    https://arxiv.org/abs/2404.04345.
 ]
