@@ -168,12 +168,18 @@
   #set enum(numbering: "[1]")
   // #publications(path: "list.yml", bold: "Y. Sun")
 
-  + *Y. Sun*, “System and Methods to Determine ME/CFS & Long COVID Disease Severity
-    Using Wearable Sensor & Survey Data”, Bachelor's Thesis, University of Utah,
+  + *Y. Sun*, "System and Methods to Determine ME/CFS & Long COVID Disease Severity
+    Using Wearable Sensor & Survey Data", Bachelor's Thesis, University of Utah,
     May. 2023.
 
-  + *Y. Sun*, S. D. Vernon, and S. Roundy, “System and Method to Determine ME/CFS
-    and Long COVID Disease Severity Using a Wearable Sensor”. International Journal
+  + *Y. Sun*, S. D. Vernon, and S. Roundy, "System and Method to Determine ME/CFS
+    and Long COVID Disease Severity Using a Wearable Sensor". International Journal
     of Medical Informatics, Under Review. Jun. 2024.
     https://arxiv.org/abs/2404.04345.
+
+  // + *Y. Sun*, C. Rond, A. B. Cash, D. Kaufman, L. Bateman, S. D. Vernon, S. Roundy, "Oxaloacetate
+  //   Reduces Physical and Cognitive Fatigue in a Subset of Myalgic
+  //   Encephalomyelitis/Chronic Fatigue Syndrome (ME/CFS) Patients", Frontiers in
+  //   Neuroscience - Fatigue: Physiology and Pathology, Volume II, Under Review. Sep.
+  //   2024.
 ]
