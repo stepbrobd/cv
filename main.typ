@@ -15,7 +15,8 @@
 #section(name: "Research Interests")[
   #interests[
     - Formal verifications on distributed systems.
-    - Type theory and high-performance runtime systems.
+    - Type theory and managed runtime systems.
+    - Reproducible build systems.
   ]
 ]
 
@@ -61,8 +62,8 @@
     - Improved and reproduced the method proposed in #link(
         "https://dl.acm.org/doi/abs/10.1145/3555776.3577712",
       )[Huang et al. SAC '23], making the framework to be implementation/interpreter
-      agnostic. Initial evaluation showed \~8% and \~50% performance improvement on
-      eJSVM and Ruby, respectively.
+      agnostic. Initial evaluation showed \~7.5% performance improvement on both eJSVM
+      and Ruby.
   ]
 
   #employment(
