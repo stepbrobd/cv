@@ -57,7 +57,7 @@
   )[
     - Advised under #link("https://tugawa.github.io/index-e.html")[Tomoharu Ugawa] at
       the #link("https://www.csg.ci.i.u-tokyo.ac.jp/en")[Computing Software Group],
-      created a framework to apply genetic algorithm with multiple buit-in libraries
+      created a framework to apply genetic algorithm with multiple built-in libraries
       to improve bytecode handler performance in interpreters (e.g. eJSVM, Ruby, Lua).
     - Improved and reproduced the method proposed in #link(
         "https://dl.acm.org/doi/abs/10.1145/3555776.3577712",
