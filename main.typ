@@ -12,11 +12,13 @@
   ),
 )
 
-#section(name: "Research Interests")[
+#section(
+  name: "Research Interests",
+)[
   #interests[
-    - Formal verifications on distributed systems.
-    - Type theory and managed runtime systems.
-    - Reproducible build systems.
+    - Verifications on consistency semantical constraints in distributed systems.
+    - Constructive type theory and mechanized proofs.
+    - Reproducible (build) systems.
   ]
 ]
 
@@ -26,8 +28,8 @@
   #education(
     institution: "Northeastern University", degree: "M.Sc. in Computer Science", attended: "2023/09 - 2025/04", location: "Boston, MA, USA",
   )[
-    Google CSRMP Fellow, 2023b. NixOS Foundation SoN #link("https://github.com/ngi-nix/ngipkgs")[NGIpkgs] Working
-    Group, 2024. FAST '25 Artifact Evaluation Committee, 2024.
+    Google CSRMP Fellow (2023b). NixOS Foundation SoN 2024 #link("https://github.com/ngi-nix/ngipkgs")[NGIpkgs] Working
+    Group. FAST '25 Artifact Evaluation Committee.
 
     Member of the #link("https://srg.khoury.northeastern.edu")[Systems Research Group],
     Advisor: #link("https://www.jiyongshin.info")[Ji-Yong Shin].
@@ -36,7 +38,7 @@
   #education(
     institution: "University of Utah", degree: "B.Sc. in Computer Science", attended: "2019/08 - 2023/05", location: "Salt Lake City, UT, USA",
   )[
-    Academic Excellence Scholarship, 2019-2023.
+    Academic Excellence Scholarship (2019-2023).
 
     Thesis: #link(
       "https://ysun.co/assets/static/doc/bt.pdf",
@@ -61,7 +63,7 @@
       to improve bytecode handler performance in interpreters (e.g. eJSVM, Ruby, Lua).
     - Improved and reproduced the method proposed in #link(
         "https://dl.acm.org/doi/abs/10.1145/3555776.3577712",
-      )[Huang et al. SAC '23], making the framework to be implementation/interpreter
+      )[Huang et al. SAC '23], making the framework implementation/interpreter
       agnostic. Initial evaluation showed \~7.5% performance improvement on both eJSVM
       and Ruby.
   ]
@@ -72,7 +74,7 @@
     - Graduate TA for #link(
         "https://3700.network/docs/syllabus",
       )[CS 3700 - Networks and Distributed Systems] (\~200 enrolled students):
-      Responsible for hosting oﬃce hours, course infrastructure setup/maintenance
+      Responsible for hosting office hours, course infrastructure setup/maintenance
       (autograder setup and debugging), and grading assignments.
     - Topics including routing, congestion control, network security, and distributed
       protocols like NTP and Raft, and general asynchronous network programming with
@@ -97,7 +99,7 @@
     - Enterprise system administration, managed 1000+ university-owned
       iOS/iPadOS/macOS/tvOS, Windows, and Linux systems.
     - Created multiple automation tools to perform multi-platform unattended
-      on-boarding, off-boarding, package licensing, updates, and distributions.
+      on-boarding, off-boarding, software licensing, upgrades, and distributions.
   ]
 
   #employment(
@@ -114,7 +116,7 @@
   name: "Projects",
 )[
 #project(
-  name: "AS10779", display: "ysun.co/10779", url: "https://ysun.co/10779",
+  name: "AS10779", display: "peeringdb.com/net/37979", url: "https://www.peeringdb.com/net/37979",
 )[
 - Operator of AS10779, #link("https://rdap.arin.net/registry/ip/23.161.104.0")[`23.161.104.0/24`] and #link(
     "https://rdap.arin.net/registry/ip/2620:be:a000::",
@@ -156,10 +158,10 @@
 #section(
   name: "Skills",
 )[
-  - *Programming Languages*: Nix, Go, Python, Haskell, C/C++, Shell, JS/TS, Coq,
+  - *Programming Languages*: Nix, Go, Python, OCaml, Haskell, C/C++, JS/TS, Coq,
     Typst, LaTeX.
-  - *Tools*: Git, NixOS, Docker/Kubernetes, Bird2, WireGuard, Z3, Matplotlib,
-    Pandas, NumPy.
+  - *Tools*: Git, NixOS, Docker/K8S, Bird2, SMT-LIB/CVC5/Z3, Matplotlib, Pandas,
+    NumPy.
   - *Languages*: English (native), Mandarin (native), Japanese (intermediate).
 ]
 
