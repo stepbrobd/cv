@@ -29,7 +29,9 @@
     institution: "Northeastern University", degree: "M.Sc. in Computer Science", attended: "2023/09 - 2025/04", location: "Boston, MA, USA",
   )[
     Google CSRMP Fellow (2023b). NixOS Foundation SoN 2024 #link("https://github.com/ngi-nix/ngipkgs")[NGIpkgs] Working
-    Group. FAST '25 Artifact Evaluation Committee.
+    Group. #link(
+      "https://www.usenix.org/conference/fast25/call-for-artifacts#:~:text=Yifei%C2%A0Sun%2C%20Northeastern%20University",
+    )[FAST '25 Artifact Evaluation Committee].
 
     Member of the #link("https://srg.khoury.northeastern.edu")[Systems Research Group],
     Advisor: #link("https://www.jiyongshin.info")[Ji-Yong Shin].
