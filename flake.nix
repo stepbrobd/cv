@@ -1,21 +1,18 @@
 {
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixpkgs-unstable";
-    utils.url = "github:numtide/flake-utils";
+    parts.url = "github:hercules-ci/flake-parts";
+    parts.inputs.nixpkgs-lib.follows = "nixpkgs";
+    systems.url = "github:nix-systems/default";
   };
 
-  outputs =
-    { self
-    , nixpkgs
-    , utils
-    }: utils.lib.eachDefaultSystem (system:
-    let
-      pkgs = import nixpkgs { inherit system; };
-    in
-    {
+  outputs = inputs: inputs.parts.lib.mkFlake { inherit inputs; } {
+    systems = import inputs.systems;
+
+    perSystem = { pkgs, ... }: {
       packages.default = pkgs.stdenvNoCC.mkDerivation {
         name = "cv";
-        version = self.shortRev or self.dirtyShortRev;
+        version = with inputs; self.shortRev or self.dirtyShortRev;
         src = ./.;
         nativeBuildInputs = [ pkgs.typst ];
         buildPhase = ''
@@ -43,5 +40,6 @@
         ${pkgs.nixpkgs-fmt}/bin/nixpkgs-fmt .
         ${pkgs.typstfmt}/bin/typstfmt **/*.typ
       '';
-    });
+    };
+  };
 }
