@@ -1,4 +1,86 @@
-#import "cv.typ": *
+#let cv(address: none, contact: none, links: none, body) = [
+  #set document(author: contact.name, title: contact.name)
+  #set text(font: "New Computer Modern", lang: "en", size: 10pt)
+
+  #show link: underline
+
+  #set page(
+    paper: "us-letter", margin: (x: 1in, y: 1in), header: context{
+      if here().page() == 1 {
+        h(1fr)
+        text(
+          gray,
+        )[#datetime.today().display("[month repr:short]. [day padding:none], [year]")]
+      } else {
+        h(1fr)
+        text(gray)[#contact.name]
+      }
+    }, footer: context{
+      h(1fr)
+      text(gray)[#counter(page).display("1/1", both: true)]
+    },
+  )
+
+  #align(
+    center,
+  )[
+    #block(heading(level: 1, upper(contact.name)))
+    #block(
+      text[
+        #address.line1, #address.line2, #address.city, #address.state #address.zip
+      ],
+    )
+    #block(
+      text[
+        #link("mailto:" + contact.email)[#contact.email] #h(10%) #link("tel:" + contact.phone)[#contact.phone]
+      ],
+    )
+    #grid(for i in range(links.len()) {
+      link(links.at(i).url)[#links.at(i).display] + h(10%)
+    } + h(-10%))
+  ]
+
+  #body
+]
+
+#let section(name: none, body) = [
+  #heading(level: 2, upper(name))
+  #line(length: 100%)
+
+  #body
+]
+
+#let interests(body) = [
+  #body
+]
+
+#let education(institution: none, degree: none, attended: none, location: none, body) = [
+  #heading(level: 3, [#institution #h(1fr) #degree])
+  #text(attended + h(1fr) + location)
+
+  #body
+]
+
+#let employment(position: none, company: none, worked: none, body) = [
+  #heading(
+    level: 3, [#position, #company #h(1fr) #text(size: 10pt, weight: "regular", worked)],
+  )
+
+  #body
+]
+
+#let project(name: none, display: none, url: none, body) = [
+  #heading(
+    level: 3, [#name #h(1fr) #link(url)[#text(size: 10pt, weight: "regular", display)]],
+  )
+
+  #body
+]
+
+#let publications(path: none, bold: none) = [
+  #show bold: name => text(weight: "bold", name)
+  #bibliography(title: none, style: "ieee", full: true, path)
+]
 
 #show: cv.with(
   contact: (
@@ -26,6 +108,17 @@
   name: "Education",
 )[
   #education(
+    institution: "Inria", degree: "Ph.D. in Computer Science", attended: "2025/06 - 2028/06", location: "Grenoble, France",
+  )[
+    Incoming PhD student at Centre Inria de l'Université Grenoble Alpes.
+
+    Member of the #link("https://team.inria.fr/datamove")[DataMove Team], Advisor: #link("https://datamove.imag.fr/olivier.richard")[Olivier Richard].
+    Co-advisor: #link(
+      "https://avalon.ens-lyon.fr/~cperez/web/doku.php/start",
+    )[Christian Perez].
+  ]
+
+  #education(
     institution: "Northeastern University", degree: "M.Sc. in Computer Science", attended: "2023/09 - 2025/04", location: "Boston, MA, USA",
   )[
     Google CSRMP Fellow (2023b). NixOS Foundation SoN 2024 #link("https://github.com/ngi-nix/ngipkgs")[NGIpkgs] Working
@@ -41,11 +134,6 @@
     institution: "University of Utah", degree: "B.Sc. in Computer Science", attended: "2019/08 - 2023/05", location: "Salt Lake City, UT, USA",
   )[
     Academic Excellence Scholarship (2019-2023).
-
-    Thesis: #link(
-      "https://ysun.co/assets/static/doc/bt.pdf",
-    )[System and Methods to Determine ME/CFS & Long COVID Disease Severity Using
-      Wearable Sensor & Survey Data].
 
     Member of the #link("https://iss.mech.utah.edu")[Integrated Self-Powered Sensing Lab],
     Advisor: #link("https://iss.mech.utah.edu/shad-roundy")[Shad Roundy],
@@ -135,14 +223,6 @@
   - Z3 based verification tool to axiomatically check the compositions of multiple
     weak consistency semantics and the final semantics' theoretical consistency
     guarantees and safety properties.
-]
-
-#project(
-  name: "Finch", display: "github.com/stepbrobd/finch", url: "https://github.com/stepbrobd/finch",
-)[
-  - A genetic algorithm framework and visualizer written in Go.
-  - User-definable genetic algorithm configurations, including population size,
-    layer size (input, hidden, output), mutation rate, and training/testing data.
 ]
 
 #project(

@@ -1,10 +1,5 @@
-# Editor
-/.idea
-/.vscode
-
-# Nix
-/result
-/.direnv
-
-# Typst
 *.pdf
+.direnv
+.idea
+.vscode
+result
