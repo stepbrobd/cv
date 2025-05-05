@@ -100,7 +100,7 @@
   #interests[
     - Verifications on consistency semantical constraints in distributed systems.
     - Constructive type theory and mechanized proofs.
-    - Reproducible (build) systems.
+    - Reproducible (build) system in HPC environments.
   ]
 ]
 
@@ -108,9 +108,9 @@
   name: "Education",
 )[
   #education(
-    institution: "Inria", degree: "Ph.D. in Computer Science", attended: "2025/06 - 2028/06", location: "Grenoble, France",
+    institution: "Inria", degree: "Ph.D. in Computer Science", attended: "2025/07 - 2028/07", location: "Grenoble, France",
   )[
-    Incoming PhD student at Centre Inria de l'Université Grenoble Alpes.
+    PhD student at Centre Inria de l'Université Grenoble Alpes.
 
     Member of the #link("https://team.inria.fr/datamove")[DataMove Team], Advisor: #link("https://datamove.imag.fr/olivier.richard")[Olivier Richard].
     Co-advisor: #link(
@@ -211,8 +211,7 @@
 - Operator of AS10779, #link("https://rdap.arin.net/registry/ip/23.161.104.0")[`23.161.104.0/24`] and #link(
     "https://rdap.arin.net/registry/ip/2620:be:a000::",
   )[`2620:BE:A000::/48`] (under ARIN).
-- Experimental research network, tunneled peering with WireGuard served with
-  NixOS.
+- Research network, tunneled peering with VxLAN and/or WireGuard on NixOS.
 ]
 
 #project(
@@ -242,7 +241,7 @@
 )[
   - *Programming Languages*: Nix, Go, Python, OCaml, Haskell, C/C++, JS/TS, Coq,
     Typst, LaTeX.
-  - *Tools*: Git, NixOS, Docker/K8S, Bird2, SMT-LIB/CVC5/Z3, Matplotlib, Pandas,
+  - *Tools*: Git, NixOS, Docker/K8S, Bird, SMT-LIB/CVC5/Z3, Matplotlib, Pandas,
     NumPy.
   - *Languages*: English (native), Mandarin (native), Japanese (intermediate).
 ]
@@ -261,10 +260,4 @@
     and Long COVID Disease Severity Using a Wearable Sensor". International Journal
     of Medical Informatics, Under Review. Jun. 2024.
     https://arxiv.org/abs/2404.04345.
-
-  // + *Y. Sun*, C. Rond, A. B. Cash, D. Kaufman, L. Bateman, S. D. Vernon, S. Roundy, "Oxaloacetate
-  //   Reduces Physical and Cognitive Fatigue in a Subset of Myalgic
-  //   Encephalomyelitis/Chronic Fatigue Syndrome (ME/CFS) Patients", Frontiers in
-  //   Neuroscience - Fatigue: Physiology and Pathology, Volume II, Under Review. Sep.
-  //   2024.
 ]
