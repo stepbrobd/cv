@@ -25,14 +25,10 @@
     center,
   )[
     #block(heading(level: 1, upper(contact.name)))
+    #block(text[#address])
     #block(
       text[
-        #address.line1, #address.line2, #address.city, #address.state #address.zip
-      ],
-    )
-    #block(
-      text[
-        #link("mailto:" + contact.email)[#contact.email] #h(10%) #link("tel:" + contact.phone)[#contact.phone]
+        #link("mailto:" + contact.email)[#contact.email] #h(10%) #link("tel:" + contact.phone.replace(" ", ""))[#contact.phone]
       ],
     )
     #grid(for i in range(links.len()) {
@@ -47,10 +43,6 @@
   #heading(level: 2, upper(name))
   #line(length: 100%)
 
-  #body
-]
-
-#let interests(body) = [
   #body
 ]
 
@@ -84,25 +76,13 @@
 
 #show: cv.with(
   contact: (
-    name: "Yifei Sun", phone: "+18014338213", email: "ysun@hey.com", orcid: "0000-0002-1591-7458",
-  ), address: (
-    line1: "214 WVH", line2: "440 Huntington Ave", city: "Boston", state: "MA", zip: "02115",
-  ), links: (
+    name: "Yifei Sun", phone: "+33 6 95 25 04 90", email: "ysun@hey.com", orcid: "0000-0002-1591-7458",
+  ), address: ("Grenoble, France"), links: (
     (display: "ysun.co", url: "https://ysun.co"), (display: "github.com/stepbrobd", url: "https://github.com/stepbrobd"), (
       display: "linkedin.com/in/yifei-s", url: "https://www.linkedin.com/in/yifei-s",
     ),
   ),
 )
-
-#section(
-  name: "Research Interests",
-)[
-  #interests[
-    - Verifications on consistency semantical constraints in distributed systems.
-    - Constructive type theory and mechanized proofs.
-    - Reproducible (build) system in HPC environments.
-  ]
-]
 
 #section(
   name: "Education",
@@ -121,10 +101,9 @@
   #education(
     institution: "Northeastern University", degree: "M.Sc. in Computer Science", attended: "2023/09 - 2025/04", location: "Boston, MA, USA",
   )[
-    Google CSRMP Fellow (2023b). NixOS Foundation SoN 2024 #link("https://github.com/ngi-nix/ngipkgs")[NGIpkgs] Working
-    Group. #link(
+    Google CSRMP Fellow (2023b). #link(
       "https://www.usenix.org/conference/fast25/call-for-artifacts#:~:text=Yifei%C2%A0Sun%2C%20Northeastern%20University",
-    )[FAST '25 Artifact Evaluation Committee].
+    )[FAST '25 Artifact Evaluation Committee] member.
 
     Member of the #link("https://srg.khoury.northeastern.edu")[Systems Research Group],
     Advisor: #link("https://www.jiyongshin.info")[Ji-Yong Shin].
@@ -156,6 +135,17 @@
       )[Huang et al. SAC '23], making the framework implementation/interpreter
       agnostic. Initial evaluation showed \~7.5% performance improvement on both eJSVM
       and Ruby.
+  ]
+
+  #employment(
+    position: "Contractor", company: "NixOS Foundation", worked: "2024/05 - 2024/07",
+  )[
+    - Member of NixOS Foundation SoN 2024 #link("https://github.com/ngi-nix/ngipkgs")[NGIpkgs] Working
+      Group sponsored by NLnet Foundation. Worked on various systemd and D-Bus related
+      configurations, and networking infrastructure improvements and troubleshooting.
+    - Developed various NixOS modules and integration tests for NLnet sponsored
+      projects with Python and QEMU with complex virtualized networking setups.
+      Upstreamed automated Python binding generator for 150+ tree-sitter grammars.
   ]
 
   #employment(
@@ -206,12 +196,14 @@
   name: "Projects",
 )[
 #project(
-  name: "AS10779", display: "peeringdb.com/net/37979", url: "https://www.peeringdb.com/net/37979",
+  name: "AS10779", display: "peeringdb.com/asn/10779", url: "https://www.peeringdb.com/asn/10779",
 )[
-- Operator of AS10779, #link("https://rdap.arin.net/registry/ip/23.161.104.0")[`23.161.104.0/24`] and #link(
-    "https://rdap.arin.net/registry/ip/2620:be:a000::",
-  )[`2620:BE:A000::/48`] (under ARIN).
-- Research network, tunneled peering with VxLAN and/or WireGuard on NixOS.
+- Operator of AS10779, #link("https://search.arin.net/rdap/?query=23.161.104.0")[`23.161.104.0/24`], #link(
+    "https://portal.ampr.org/qr4/a589a015-1713-4ecd-bf49-33d58a9284ea",
+  )[`44.32.189.0/24`], and #link(
+    "https://search.arin.net/rdap/?query=2620:be:a000::",
+  )[`2620:BE:A000::/48`]
+- Research network, tunneled peering with VxLAN and/or WireGuard, author of #link("https://github.com/stepbrobd/router")[NixOS Router module].
 ]
 
 #project(
@@ -239,11 +231,11 @@
 #section(
   name: "Skills",
 )[
-  - *Programming Languages*: Nix, Go, Python, OCaml, Haskell, C/C++, JS/TS, Coq,
+  - *Programming Languages*: Nix, Go, Python, OCaml, Haskell, C, JS/TS, Coq, Lean,
     Typst, LaTeX.
-  - *Tools*: Git, NixOS, Docker/K8S, Bird, SMT-LIB/CVC5/Z3, Matplotlib, Pandas,
-    NumPy.
-  - *Languages*: English (native), Mandarin (native), Japanese (intermediate).
+  - *Tools*: Git/JJ, NixOS, Docker/K8S, Bird, SMT-LIB/CVC5/Z3, Matplotlib, TikZ.
+  - *Languages*: English (native), Mandarin (native), Japanese (intermediate),
+    French (beginner).
 ]
 
 #section(
