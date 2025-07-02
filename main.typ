@@ -77,7 +77,9 @@
 #show: cv.with(
   contact: (
     name: "Yifei Sun", phone: "+33 6 95 25 04 90", email: "ysun@hey.com", orcid: "0000-0002-1591-7458",
-  ), address: ("Grenoble, France"), links: (
+  ), address: (
+    "Bâtiment IMAG, Université Grenoble Alpes, CS 40700, 38058 Grenoble Cedex 9, France"
+  ), links: (
     (display: "ysun.co", url: "https://ysun.co"), (display: "github.com/stepbrobd", url: "https://github.com/stepbrobd"), (
       display: "linkedin.com/in/yifei-s", url: "https://www.linkedin.com/in/yifei-s",
     ),
@@ -88,11 +90,13 @@
   name: "Education",
 )[
   #education(
-    institution: "Inria", degree: "Ph.D. in Computer Science", attended: "2025/07 - 2028/07", location: "Grenoble, France",
+    institution: "Inria", degree: "Ph.D. in Computer Science", attended: "2025/07 - 2028/07", location: "Saint-Martin-d'Hères, Auvergne-Rhône-Alpes, France",
   )[
-    PhD student at Centre Inria de l'Université Grenoble Alpes.
+    Doctoral researcher at Centre Inria de l'Université Grenoble Alpes, registered
+    at ENS de Lyon.
 
-    Member of the #link("https://team.inria.fr/datamove")[DataMove Team], Advisor: #link("https://datamove.imag.fr/olivier.richard")[Olivier Richard].
+    Member of the #link("https://team.inria.fr/datamove")[DataMove] and #link("https://avalon.ens-lyon.fr")[Avalon] team,
+    Advisor: #link("https://datamove.imag.fr/olivier.richard")[Olivier Richard],
     Co-advisor: #link(
       "https://avalon.ens-lyon.fr/~cperez/web/doku.php/start",
     )[Christian Perez].
