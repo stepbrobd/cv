@@ -78,7 +78,7 @@
   contact: (
     name: "Yifei Sun", phone: "+33 6 95 25 04 90", email: "ysun@hey.com", orcid: "0000-0002-1591-7458",
   ), address: (
-    "Bâtiment IMAG, Université Grenoble Alpes, CS 40700, 38058 Grenoble Cedex 9, France"
+    "Bureau 431, Bâtiment IMAG, Université Grenoble Alpes, CS 40700, 38058 Grenoble Cedex 9, France"
   ), links: (
     (display: "ysun.co", url: "https://ysun.co"), (display: "github.com/stepbrobd", url: "https://github.com/stepbrobd"), (
       display: "linkedin.com/in/yifei-s", url: "https://www.linkedin.com/in/yifei-s",
@@ -204,17 +204,21 @@
 )[
 - Operator of AS10779, #link("https://search.arin.net/rdap/?query=23.161.104.0")[`23.161.104.0/24`], #link(
     "https://portal.ampr.org/qr4/a589a015-1713-4ecd-bf49-33d58a9284ea",
-  )[`44.32.189.0/24`], and #link(
+  )[`44.32.189.0/24`], #link(
+    "https://search.arin.net/rdap/?query=192.104.136.0",
+  )[`192.104.136.0/24`], and #link(
     "https://search.arin.net/rdap/?query=2620:be:a000::",
-  )[`2620:BE:A000::/48`]
-- Research network, tunneled peering with VxLAN and/or WireGuard, author of #link("https://github.com/stepbrobd/router")[NixOS Router module].
+  )[`2620:BE:A000::/48`].
+- Research network, virtual peering over VxLAN, GRE, and WireGuard, author of #link("https://github.com/stepbrobd/router")[NixOS Router module],
+  NixCon 2025 talk "Internet scale routing with NixOS" speaker. Sponsored by
+  Cloudflare.
 ]
 
 #project(
   name: "Consistency", display: "github.com/stepbrobd/consistency", url: "https://github.com/stepbrobd/consistency-z3",
 )[
-  - A verification tool for testing the compositional consistency guarantees of
-    distributed systems.
+  - Verification of compositional consistency guarantees of distributed systems.
+    Submission under review.
   - Z3 based verification tool to axiomatically check the compositions of multiple
     weak consistency semantics and the final semantics' theoretical consistency
     guarantees and safety properties.
@@ -235,8 +239,8 @@
 #section(
   name: "Skills",
 )[
-  - *Programming Languages*: Nix, Go, Python, OCaml, Haskell, C, JS/TS, Coq, Lean,
-    Typst, LaTeX.
+  - *Programming Languages*: Nix, Go, Python, OCaml, C, JS/TS, Coq, Lean, Typst,
+    LaTeX.
   - *Tools*: Git/JJ, NixOS, Docker/K8S, Bird, SMT-LIB/CVC5/Z3, Matplotlib, TikZ.
   - *Languages*: English (native), Mandarin (native), Japanese (intermediate),
     French (beginner).
@@ -253,7 +257,5 @@
     May. 2023.
 
   + *Y. Sun*, S. D. Vernon, and S. Roundy, "System and Method to Determine ME/CFS
-    and Long COVID Disease Severity Using a Wearable Sensor". International Journal
-    of Medical Informatics, Under Review. Jun. 2024.
-    https://arxiv.org/abs/2404.04345.
+    and Long COVID Disease Severity Using a Wearable Sensor". Apr. 2024. #link("https://arxiv.org/abs/2404.04345")[arXiv:2404.04345].
 ]
