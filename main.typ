@@ -206,9 +206,7 @@
     "https://portal.ampr.org/qr4/a589a015-1713-4ecd-bf49-33d58a9284ea",
   )[`44.32.189.0/24`], #link(
     "https://search.arin.net/rdap/?query=192.104.136.0",
-  )[`192.104.136.0/24`], and #link(
-    "https://search.arin.net/rdap/?query=2620:be:a000::",
-  )[`2620:BE:A000::/48`].
+  )[`192.104.136.0/24`], and #link("https://rdap.arin.net/registry/ip/2602:f590::")[`2602:f590::/36`].
 - Research network, virtual peering over VxLAN, GRE, and WireGuard, author of #link("https://github.com/stepbrobd/router")[NixOS Router module],
   NixCon 2025 talk "Internet scale routing with NixOS" speaker. Sponsored by
   Cloudflare.
