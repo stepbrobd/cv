@@ -5,7 +5,7 @@
   #show link: underline
 
   #set page(
-    paper: "us-letter", margin: (x: 1in, y: 1in), header: context{
+    paper: "us-letter", margin: (x: 0.95in, y: 0.95in), header: context{
       if here().page() == 1 {
         h(1fr)
         text(
@@ -90,7 +90,7 @@
   name: "Education",
 )[
   #education(
-    institution: "Inria", degree: "Ph.D. in Computer Science", attended: "2025/07 - 2028/07", location: "Saint-Martin-d'Hères, Auvergne-Rhône-Alpes, France",
+    institution: "Inria", degree: "Ph.D. in Computer Science", attended: "2025/07 - 2028/07 (Expected)", location: "Saint-Martin-d'Hères, Auvergne-Rhône-Alpes, France",
   )[
     Doctoral researcher at Centre Inria de l'Université Grenoble Alpes, registered
     at ENS de Lyon.
@@ -132,24 +132,24 @@
   )[
     - Advised under #link("https://tugawa.github.io/index-e.html")[Tomoharu Ugawa] at
       the #link("https://www.csg.ci.i.u-tokyo.ac.jp/en")[Computing Software Group],
-      created a framework to apply genetic algorithm with multiple built-in libraries
-      to improve bytecode handler performance in interpreters (e.g. eJSVM, Ruby, Lua).
-    - Improved and reproduced the method proposed in #link(
+      created a framework to apply genetic algorithm to improve bytecode handler
+      performance in interpreters (e.g. eJSVM, Ruby, Lua).
+    - Improved heuristics proposed in #link(
         "https://dl.acm.org/doi/abs/10.1145/3555776.3577712",
       )[Huang et al. SAC '23], making the framework implementation/interpreter
-      agnostic. Initial evaluation showed \~7.5% performance improvement on both eJSVM
-      and Ruby.
+      agnostic. Evaluation showed \~7.5% performance improvement on both eJSVM and
+      Ruby.
   ]
 
   #employment(
     position: "Contractor", company: "NixOS Foundation", worked: "2024/05 - 2024/07",
   )[
     - Member of NixOS Foundation SoN 2024 #link("https://github.com/ngi-nix/ngipkgs")[NGIpkgs] Working
-      Group sponsored by NLnet Foundation. Worked on various systemd and D-Bus related
-      configurations, and networking infrastructure improvements and troubleshooting.
-    - Developed various NixOS modules and integration tests for NLnet sponsored
-      projects with Python and QEMU with complex virtualized networking setups.
-      Upstreamed automated Python binding generator for 150+ tree-sitter grammars.
+      Group sponsored by NLnet Foundation. Improved various systemd, D-Bus, networking
+      infrastructure configurations.
+    - Developed multiple NixOS modules and NixOS integration tests for NLnet sponsored
+      projects using QEMU with complex virtualized networking setups. Upstreamed
+      automated Python binding generator for 150+ tree-sitter grammars.
   ]
 
   #employment(
@@ -159,7 +159,7 @@
         "https://3700.network/docs/syllabus",
       )[CS 3700 - Networks and Distributed Systems] (\~200 enrolled students):
       Responsible for hosting office hours, course infrastructure setup/maintenance
-      (autograder setup and debugging), and grading assignments.
+      (autograder setup and debugging).
     - Topics including routing, congestion control, network security, and distributed
       protocols like NTP and Raft, and general asynchronous network programming with
       Python, Haskell, and Go.
@@ -171,7 +171,7 @@
     - Joint research project in collaboration with the Bateman Horne Center's clinical
       research team, developed and managed a new data collection infrastructure,
       bringing the overall data collection error rate down to sub 0.25%.
-    - The infrastructure aggregats 100+ IMUs, multiple single-board computers and
+    - The infrastructure aggregating 100+ IMUs, multiple single-board computers and
       high-performance servers, collected terabyte-level motion data, then applied
       sensor fusion, motion analysis, and machine learning techniques on collected
       time-series and survey data.
@@ -200,16 +200,15 @@
   name: "Projects",
 )[
 #project(
-  name: "AS10779", display: "peeringdb.com/asn/10779", url: "https://www.peeringdb.com/asn/10779",
+  name: "AS10779, AS18932", display: "peeringdb.com/asn/10779", url: "https://www.peeringdb.com/asn/10779",
 )[
-- Operator of AS10779, #link("https://search.arin.net/rdap/?query=23.161.104.0")[`23.161.104.0/24`], #link(
+- Operator of #link("https://search.arin.net/rdap/?query=23.161.104.0")[`23.161.104.0/24`], #link(
     "https://portal.ampr.org/qr4/a589a015-1713-4ecd-bf49-33d58a9284ea",
   )[`44.32.189.0/24`], #link(
     "https://search.arin.net/rdap/?query=192.104.136.0",
   )[`192.104.136.0/24`], and #link("https://rdap.arin.net/registry/ip/2602:f590::")[`2602:f590::/36`].
-- Research network, virtual peering over VxLAN, GRE, and WireGuard, author of #link("https://github.com/stepbrobd/router")[NixOS Router module],
-  NixCon 2025 talk "Internet scale routing with NixOS" speaker. Sponsored by
-  Cloudflare.
+- Author of #link("https://github.com/stepbrobd/router")[NixOS Router module],
+  NixCon 2025 talk "Internet scale routing with NixOS" speaker.
 ]
 
 #project(
@@ -217,9 +216,9 @@
 )[
   - Verification of compositional consistency guarantees of distributed systems.
     Submission under review.
-  - Z3 based verification tool to axiomatically check the compositions of multiple
-    weak consistency semantics and the final semantics' theoretical consistency
-    guarantees and safety properties.
+  - Z3/CVC5 based verification tool to axiomatically check the compositions of
+    multiple weak consistency semantics and the final semantics' theoretical
+    consistency guarantees and safety properties.
 ]
 
 #project(
@@ -237,7 +236,7 @@
 #section(
   name: "Skills",
 )[
-  - *Programming Languages*: Nix, Go, Python, OCaml, C, JS/TS, Coq, Lean, Typst,
+  - *Programming Languages*: Nix, OCaml, C, Go, Python, JS/TS, Rocq, Lean, Typst,
     LaTeX.
   - *Tools*: Git/JJ, NixOS, Docker/K8S, Bird, SMT-LIB/CVC5/Z3, Matplotlib, TikZ.
   - *Languages*: English (native), Mandarin (native), Japanese (intermediate),
@@ -250,10 +249,14 @@
   #set enum(numbering: "[1]")
   // #publications(path: "list.yml", bold: "Y. Sun")
 
-  + *Y. Sun*, "System and Methods to Determine ME/CFS & Long COVID Disease Severity
-    Using Wearable Sensor & Survey Data", Bachelor's Thesis, University of Utah,
-    May. 2023.
+  + *Y. Sun*, S.D. Vernon, and S. Roundy, "System and method to determine ME/CFS and
+    Long COVID disease severity using a wearable sensor". Apr. 2024. #link("https://arxiv.org/abs/2404.04345")[arXiv:2404.04345].
 
-  + *Y. Sun*, S. D. Vernon, and S. Roundy, "System and Method to Determine ME/CFS
-    and Long COVID Disease Severity Using a Wearable Sensor". Apr. 2024. #link("https://arxiv.org/abs/2404.04345")[arXiv:2404.04345].
+  + S.D. Vernon, C. Rond, *Y. Sun*, S. Roundy, J. Bell, B. Rond, D.L. Kaufman, A.B.
+    Cash, B. Yellman and L. Bateman, "Relationships between fatigue, cognitive
+    function, and upright activity in a randomized trial of oxaloacetate for myalgic
+    encephalomyelitis/chronic fatigue syndrome". Frontiers in Neurology. 16, (Oct.
+    2025). #link(
+      "https://doi.org/10.3389/fneur.2025.1691147",
+    )[doi.org/10.3389/fneur.2025.1691147].
 ]
