@@ -2,36 +2,45 @@
   #set document(author: contact.name, title: contact.name)
   #set text(font: "New Computer Modern", lang: "en", size: 10pt)
 
-  #show link: underline
+  #show link: it => underline(stroke: 0.3pt + luma(75%), offset: 1.5pt, it)
+
+  #show heading.where(level: 1): set text(size: 18pt)
+  #show heading.where(level: 2): set text(size: 12pt, weight: "bold")
+  #show heading.where(level: 2): set block(above: 1em, below: 0.2em)
+  #show heading.where(level: 3): set text(size: 10pt, weight: "semibold")
+
+  #set list(tight: true, spacing: 0.4em)
+  #set enum(tight: true, spacing: 0.6em)
 
   #set page(
     paper: "us-letter",
-    margin: (x: 0.95in, y: 0.95in),
+    margin: 1in,
     header: context {
       if here().page() == 1 {
         h(1fr)
-        text(
-          gray,
-        )[#(
+        text[#(
           datetime
             .today()
             .display("[month repr:short]. [day padding:none], [year]")
         )]
       } else {
         h(1fr)
-        text(gray)[#contact.name]
+        text[#contact.name]
       }
     },
     footer: context {
       h(1fr)
-      text(gray)[#counter(page).display("1/1", both: true)]
+      text[#counter(page).display("1/1", both: true)]
     },
   )
 
   #align(
     center,
   )[
-    #block(heading(level: 1, upper(contact.name)))
+    #block(heading(level: 1, [#smallcaps(contact.name) #h(0.3em) #link(
+        "https://orcid.org/" + contact.orcid,
+      )[#box(height: 0.7em, image("orcid.svg"))]]))
+
     #block(text[#address])
     #block(
       text[
@@ -52,8 +61,8 @@
 ]
 
 #let section(name: none, body) = [
-  #heading(level: 2, upper(name))
-  #line(length: 100%)
+  #heading(level: 2, smallcaps(name))
+  #line(length: 100%, stroke: 0.5pt)
 
   #body
 ]
@@ -80,18 +89,14 @@
   #body
 ]
 
-#let project(name: none, display: none, url: none, body) = [
-  #heading(
-    level: 3,
-    [#name #h(1fr) #link(url)[#text(size: 10pt, weight: "regular", display)]],
-  )
-
-  #body
-]
-
 #let publications(path: none, bold: none) = [
   #show bold: name => text(weight: "bold", name)
-  #bibliography(title: none, style: "ieee", full: true, path)
+  #bibliography(
+    title: none,
+    style: "acm.csl",
+    full: true,
+    path,
+  )
 ]
 
 #show: cv.with(
@@ -115,20 +120,33 @@
 )
 
 #section(
+  name: "Interests",
+)[
+  Reproducible HPC infrastructure, programmable networking (eBPF/XDP), formal verification of distributed systems, constructive type theory
+]
+
+#section(
   name: "Education",
 )[
   #education(
-    institution: "Inria",
+    institution: "ENS de Lyon",
     degree: "Ph.D. in Computer Science",
     attended: "2025/07 - 2028/07 (Expected)",
-    location: "Saint-Martin-d'Hères, Auvergne-Rhône-Alpes, France",
+    location: "Lyon, Auvergne-Rhône-Alpes, France",
   )[
-    Doctoral researcher at Centre Inria de l'Université Grenoble Alpes, registered
-    at ENS de Lyon.
-
-    Member of the #link("https://team.inria.fr/datamove")[DataMove] and #link("https://avalon.ens-lyon.fr")[Avalon] team,
+    LIG #link("https://team.inria.fr/datamove")[DataMove] team, LIP #link("https://avalon.ens-lyon.fr")[Avalon] team,
     Advisor: #link("https://datamove.imag.fr/olivier.richard")[Olivier Richard],
-    Co-advisor: #link("https://avalon.ens-lyon.fr/~cperez/web/doku.php/start")[Christian Perez].
+    Co-advisor: #link("https://avalon.ens-lyon.fr/~cperez/web/doku.php/start")[Christian Perez]
+  ]
+
+  #education(
+    institution: "University of Tokyo",
+    degree: "Visiting Researcher",
+    attended: "2024/05 - 2024/09",
+    location: "Bunkyo-ku, Tokyo, Japan",
+  )[
+    #link("https://www.csg.ci.i.u-tokyo.ac.jp/en")[Computing Software Group],
+    Advisor: #link("https://tugawa.github.io/index-e.html")[Tomoharu Ugawa]
   ]
 
   #education(
@@ -137,10 +155,8 @@
     attended: "2023/09 - 2025/04",
     location: "Boston, MA, USA",
   )[
-    Google CSRMP Fellow (2023b). #link("https://www.usenix.org/conference/fast25/call-for-artifacts#:~:text=Yifei%C2%A0Sun%2C%20Northeastern%20University")[FAST '25 Artifact Evaluation Committee] member.
-
-    Member of the #link("https://srg.khoury.northeastern.edu")[Systems Research Group],
-    Advisor: #link("https://www.jiyongshin.info")[Ji-Yong Shin].
+    #link("https://srg.khoury.northeastern.edu")[Systems Research Group],
+    Advisor: #link("https://www.jiyongshin.info")[Ji-Yong Shin]
   ]
 
   #education(
@@ -149,11 +165,9 @@
     attended: "2019/08 - 2023/05",
     location: "Salt Lake City, UT, USA",
   )[
-    Academic Excellence Scholarship (2019-2023).
-
-    Member of the #link("https://iss.mech.utah.edu")[Integrated Self-Powered Sensing Lab],
+    #link("https://iss.mech.utah.edu")[Integrated Self-Powered Sensing Lab],
     Advisor: #link("https://iss.mech.utah.edu/shad-roundy")[Shad Roundy],
-    Co-advisor: #link("https://robot-learning.cs.utah.edu/thermans")[Tucker Hermans].
+    Co-advisor: #link("https://robot-learning.cs.utah.edu/thermans")[Tucker Hermans]
   ]
 ]
 
@@ -161,43 +175,12 @@
   name: "Employment",
 )[
   #employment(
-    position: "Research Intern",
-    company: "University of Tokyo",
-    worked: "2024/05 - 2024/09",
-  )[
-    - Advised under #link("https://tugawa.github.io/index-e.html")[Tomoharu Ugawa] at
-      the #link("https://www.csg.ci.i.u-tokyo.ac.jp/en")[Computing Software Group],
-      created a framework to apply genetic algorithm to improve bytecode handler
-      performance in interpreters (e.g. eJSVM, Ruby, Lua).
-    - Improved heuristics proposed in #link("https://dl.acm.org/doi/abs/10.1145/3555776.3577712")[Huang et al. SAC '23], making the framework implementation/interpreter
-      agnostic. Evaluation showed \~7.5% performance improvement on both eJSVM and
-      Ruby.
-  ]
-
-  #employment(
-    position: "Contractor",
-    company: "NixOS Foundation",
-    worked: "2024/05 - 2024/07",
-  )[
-    - Member of NixOS Foundation SoN 2024 #link("https://github.com/ngi-nix/ngipkgs")[NGIpkgs] Working
-      Group sponsored by NLnet Foundation. Improved various systemd, D-Bus, networking
-      infrastructure configurations.
-    - Developed multiple NixOS modules and NixOS integration tests for NLnet sponsored
-      projects using QEMU with complex virtualized networking setups. Upstreamed
-      automated Python binding generator for 150+ tree-sitter grammars.
-  ]
-
-  #employment(
     position: "Teaching Assistant",
     company: "Northeastern University",
     worked: "2024/01 - 2024/05",
   )[
-    - Graduate TA for #link("https://3700.network/docs/syllabus")[CS 3700 - Networks and Distributed Systems] (\~200 enrolled students):
-      Responsible for hosting office hours, course infrastructure setup/maintenance
-      (autograder setup and debugging).
-    - Topics including routing, congestion control, network security, and distributed
-      protocols like NTP and Raft, and general asynchronous network programming with
-      Python, Haskell, and Go.
+    - Hosted office hours and maintained autograder for CS 3700 (Net. and Dist. Sys.) (\~200 students)
+    - Managed course infrastructure covering routing, congestion control, and distributed protocols
   ]
 
   #employment(
@@ -205,13 +188,8 @@
     company: "University of Utah",
     worked: "2021/08 - 2023/05",
   )[
-    - Joint research project in collaboration with the Bateman Horne Center's clinical
-      research team, developed and managed a new data collection infrastructure,
-      bringing the overall data collection error rate down to sub 0.25%.
-    - The infrastructure aggregating 100+ IMUs, multiple single-board computers and
-      high-performance servers, collected terabyte-level motion data, then applied
-      sensor fusion, motion analysis, and machine learning techniques on collected
-      time-series and survey data.
+    - Built data collection infrastructure for the Bateman Horne Center
+    - Collected and analyzed terabyte-level motion data using sensor fusion and ML techniques
   ]
 
   #employment(
@@ -219,10 +197,8 @@
     company: "University of Utah",
     worked: "2019/12 - 2020/09",
   )[
-    - Enterprise system administration, managed 1000+ university-owned
-      iOS/iPadOS/macOS/tvOS, Windows, and Linux systems.
-    - Created multiple automation tools to perform multi-platform unattended
-      on-boarding, off-boarding, software licensing, upgrades, and distributions.
+    - Managed 1000+ university-owned devices across iOS, macOS, Windows, and Linux
+    - Built automation tools for multi-platform onboarding, licensing, and software distribution
   ]
 
   #employment(
@@ -230,74 +206,44 @@
     company: "DJI",
     worked: "2018/07 - 2018/08",
   )[
-    - Champion of the 2018 DJI RoboMaster Summer Camp Competition.
-    - Competitive robotic system design/modeling, embedded system programming, control
-      system programming, and computer vision, led two teams of 5 to design and build
-      a STM32F4 based robotic system to perform predefined tasks.
+    - Champion of 2018 DJI RoboMaster Championship
+    - Led 2 teams of 5 to design and program STM32F4-based robots (control systems, computer vision)
   ]
 ]
 
 #section(
-  name: "Projects",
+  name: "Talks",
 )[
-  #project(
-    name: "AS10779, AS18932",
-    display: "peeringdb.com/asn/10779",
-    url: "https://www.peeringdb.com/asn/10779",
-  )[
-    - Operator of #link("https://search.arin.net/rdap/?query=23.161.104.0")[`23.161.104.0/24`], #link("https://portal.ampr.org/qr4/a589a015-1713-4ecd-bf49-33d58a9284ea")[`44.32.189.0/24`], #link("https://search.arin.net/rdap/?query=192.104.136.0")[`192.104.136.0/24`], and #link("https://rdap.arin.net/registry/ip/2602:f590::")[`2602:f590::/36`].
-    - Author of #link("https://github.com/stepbrobd/router")[NixOS Router module],
-      NixCon 2025 talk "Internet scale routing with NixOS" speaker.
-  ]
+  - #link("https://fosdem.org/2026/schedule/event/FE7BWX-ebpf_with_nix_laptop_to_testbed/")[eBPF with Nix: Laptop to Testbed], FOSDEM '26, Brussels, Belgium
+  - #link("https://talks.nixcon.org/nixcon-2025/talk/7YWTUC/")[Internet Scale Routing with NixOS], NixCon '25, Zurich, Switzerland
+]
 
-  #project(
-    name: "Consistency",
-    display: "github.com/stepbrobd/consistency",
-    url: "https://github.com/stepbrobd/consistency-z3",
-  )[
-    - Verification of compositional consistency guarantees of distributed systems.
-      Submission under review.
-    - Z3/CVC5 based verification tool to axiomatically check the compositions of
-      multiple weak consistency semantics and the final semantics' theoretical
-      consistency guarantees and safety properties.
-  ]
+#pagebreak()
 
-  #project(
-    name: "SRD",
-    display: "github.com/stepbrobd/srd",
-    url: "https://github.com/stepbrobd/srd",
-  )[
-    - Proof of concept Go static race checker based on extracting structural
-      operational semantics rules and applying the rule sets to perform static race
-      detection.
-    - As a static race checker, false positives/negatives are expected. The detection
-      is done by a stateful traversal of provided Go source file's abstract syntax
-      tree.
-  ]
+#section(
+  name: "Awards",
+)[
+  - Oxide Computer Company, Silo access (2026)
+  - NetActuate sponsorship, transit and VMs (2026)
+  - Fastly sponsorship, \$65k+ service order (2026)
+  - Cloudflare sponsorship, Enterprise zone (2025)
+  - Google CSRMP Fellow (2023b)
+  - Academic Excellence Scholarship, University of Utah (2019-2023)
 ]
 
 #section(
-  name: "Skills",
+  name: "Services",
 )[
-  - *Programming Languages*: Nix, OCaml, C, Go, Python, JS/TS, Rocq, Lean, Typst,
-    LaTeX.
-  - *Tools*: Git/JJ, NixOS, Docker/K8S, Bird, SMT-LIB/CVC5/Z3, Matplotlib, TikZ.
-  - *Languages*: English (native), Mandarin (native), Japanese (intermediate),
-    French (beginner).
+  - Grenoble Nix User Group organizer
+  - #link("https://www.usenix.org/conference/fast25/call-for-artifacts#:~:text=Yifei%C2%A0Sun%2C%20Northeastern%20University")[FAST '25 Artifact Evaluation Committee] member
+  - Nixpkgs committer
+  - #link("https://github.com/ngi-nix/ngipkgs")[NGIpkgs] Working Group, NixOS Foundation SoN 2024 (NLnet)
+  - #link("https://www.peeringdb.com/asn/10779")[AS10779] / #link("https://www.peeringdb.com/asn/18932")[AS18932] operator
+  - #link("https://www.ntppool.org/a/ysun")[NTP Pool] public time server operator
 ]
 
 #section(
   name: "Publications",
 )[
-  #set enum(numbering: "[1]")
-  // #publications(path: "list.yaml", bold: "Y. Sun")
-
-  + *Y. Sun*, S.D. Vernon, and S. Roundy, "System and method to determine ME/CFS and
-    Long COVID disease severity using a wearable sensor". Apr. 2024. #link("https://arxiv.org/abs/2404.04345")[arXiv:2404.04345].
-
-  + S.D. Vernon, C. Rond, *Y. Sun*, S. Roundy, J. Bell, B. Rond, D.L. Kaufman, A.B.
-    Cash, B. Yellman and L. Bateman, "Relationships between fatigue, cognitive
-    function, and upright activity in a randomized trial of oxaloacetate for myalgic
-    encephalomyelitis/chronic fatigue syndrome". Frontiers in Neurology. 16, (Oct.
-    2025). #link("https://doi.org/10.3389/fneur.2025.1691147")[doi.org/10.3389/fneur.2025.1691147].
+  #publications(path: "list.yaml", bold: "Sun, Y.")
 ]
