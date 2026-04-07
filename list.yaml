@@ -1,15 +1,35 @@
-sun2023thesis:
-  type: thesis
-  title: System and Methods to Determine ME/CFS & Long COVID Disease Severity Using Wearable Sensor & Survey Data
-  author: Sun, Yifei
-  date: 2023-05
-  organization: University of Utah
+vernon2025relationships:
+  type: article
+  title: "Relationships between fatigue, cognitive function, and upright activity in a randomized trial of oxaloacetate for myalgic encephalomyelitis/chronic fatigue syndrome"
+  author:
+    - Vernon, Suzanne D.
+    - Rond, Candace
+    - Sun, Yifei
+    - Roundy, Shad
+    - Bell, Jennifer
+    - Rond, Bella
+    - Kaufman, David L.
+    - Cash, Alan B.
+    - Yellman, Brayden
+    - Bateman, Lucinda
+  date: 2025-10
+  parent:
+    type: periodical
+    title: Frontiers in Neurology
+    volume: 16
+    issn: 1664-2295
+  url: https://doi.org/10.3389/fneur.2025.1691147
 
 sun2024method:
-  type: misc
+  type: article
   title: System and Method to Determine ME/CFS and Long COVID Disease Severity Using a Wearable Sensor
   author:
     - Sun, Yifei
     - Vernon, Suzanne D.
     - Roundy, Shad
   date: 2024-04
+  serial-number: "arXiv:2404.04345"
+  url: https://arxiv.org/abs/2404.04345
+  parent:
+    type: periodical
+    title: arXiv
