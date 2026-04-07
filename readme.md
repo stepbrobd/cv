@@ -1,6 +1,6 @@
 # Curriculum Vitae
 
-![Status](https://github.com/stepbrobd/cv/actions/workflows/release.yml/badge.svg)
+![Status](https://github.com/stepbrobd/cv/actions/workflows/release.yaml/badge.svg)
 
 CV with [Typst](https://github.com/typst/typst) and [Nix](https://nixos.org).
 
