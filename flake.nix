@@ -29,8 +29,9 @@
           git
           hayagriva
           nix-direnv
+          nixpkgs-fmt
           typst
-          typstfmt
+          typstyle
         ];
       };
 
@@ -38,7 +39,7 @@
         set -eoux pipefail
         shopt -s globstar
         ${pkgs.nixpkgs-fmt}/bin/nixpkgs-fmt .
-        ${pkgs.typstfmt}/bin/typstfmt **/*.typ
+        ${pkgs.typstyle}/bin/typstyle -i **/*.typ
       '';
     };
   };
