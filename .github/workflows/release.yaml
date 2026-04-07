@@ -9,7 +9,7 @@ on:
   workflow_dispatch:
   push:
     branches: ["master"]
-    paths: ["*.typ", "*.yml", "*.bib"]
+    paths: ["*.typ", "*.yaml", "*.bib"]
 
 jobs:
   Workflow:
