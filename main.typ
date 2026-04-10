@@ -223,10 +223,11 @@
 #section(
   name: "Awards",
 )[
-  - Oxide Computer Company, Silo access (2026)
-  - NetActuate sponsorship, transit and VMs (2026)
-  - Fastly sponsorship, \$65k+ service order (2026)
-  - Cloudflare sponsorship, Enterprise zone (2025)
+  - NetActuate sponsorship, VMs, transit (2026)
+  - Oxide Computer, Silo access, compute (2026)
+  - Fastly sponsorship, service credit (2026)
+  - Garnix sponsorship, 30k min/mo build (2025)
+  - Cloudflare sponsorship, Enterprise plan (2025)
   - Google CSRMP Fellow (2023b)
   - Academic Excellence Scholarship, University of Utah (2019-2023)
 ]
