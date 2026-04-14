@@ -103,14 +103,14 @@
   contact: (
     name: "Yifei Sun",
     phone: "+33 6 95 25 04 90",
-    email: "ysun@hey.com",
+    email: "yifei.sun@inria.fr",
     orcid: "0000-0002-1591-7458",
   ),
   address: (
     "Bureau 431, Bâtiment IMAG, Université Grenoble Alpes, CS 40700, 38058 Grenoble Cedex 9, France"
   ),
   links: (
-    (display: "ysun.co", url: "https://ysun.co"),
+    (display: "perso.ens-lyon.fr/yifei.sun", url: "https://ysun.co"),
     (display: "github.com/stepbrobd", url: "https://github.com/stepbrobd"),
     (
       display: "linkedin.com/in/yifei-s",
@@ -214,8 +214,8 @@
 #section(
   name: "Talks",
 )[
-  - #link("https://fosdem.org/2026/schedule/event/FE7BWX-ebpf_with_nix_laptop_to_testbed/")[eBPF with Nix: Laptop to Testbed], FOSDEM '26, Brussels, Belgium
-  - #link("https://talks.nixcon.org/nixcon-2025/talk/7YWTUC/")[Internet Scale Routing with NixOS], NixCon '25, Zurich, Switzerland
+  - #link("https://fosdem.org/2026/schedule/event/FE7BWX-ebpf_with_nix_laptop_to_testbed/")[eBPF with Nix: Laptop to Testbed], FOSDEM '26, 2026/01/31, Brussels, Belgium
+  - #link("https://talks.nixcon.org/nixcon-2025/talk/7YWTUC/")[Internet Scale Routing with NixOS], NixCon '25, 2025/09/06, Zurich, Switzerland
 ]
 
 #pagebreak()
