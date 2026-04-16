@@ -214,8 +214,8 @@
 #section(
   name: "Talks",
 )[
-  - #link("https://fosdem.org/2026/schedule/event/FE7BWX-ebpf_with_nix_laptop_to_testbed/")[eBPF with Nix: Laptop to Testbed], FOSDEM '26, 2026/01/31, Brussels, Belgium
-  - #link("https://talks.nixcon.org/nixcon-2025/talk/7YWTUC/")[Internet Scale Routing with NixOS], NixCon '25, 2025/09/06, Zurich, Switzerland
+  - #link("https://fosdem.org/2026/schedule/event/FE7BWX-ebpf_with_nix_laptop_to_testbed/")[eBPF with Nix: Laptop to Testbed], FOSDEM \'26, 2026/01/31, Brussels, Belgium
+  - #link("https://talks.nixcon.org/nixcon-2025/talk/7YWTUC/")[Internet Scale Routing with NixOS], NixCon \'25, 2025/09/06, Zurich, Switzerland
 ]
 
 #pagebreak()
@@ -236,7 +236,7 @@
   name: "Services",
 )[
   - Grenoble Nix User Group organizer
-  - #link("https://www.usenix.org/conference/fast25/call-for-artifacts#:~:text=Yifei%C2%A0Sun%2C%20Northeastern%20University")[FAST '25 Artifact Evaluation Committee] member
+  - #link("https://www.usenix.org/conference/fast25/call-for-artifacts#:~:text=Yifei%C2%A0Sun%2C%20Northeastern%20University")[FAST \'25 Artifact Evaluation Committee] member
   - Nixpkgs committer
   - #link("https://github.com/ngi-nix/ngipkgs")[NGIpkgs] Working Group, NixOS Foundation SoN 2024 (NLnet)
   - #link("https://www.peeringdb.com/asn/10779")[AS10779] / #link("https://www.peeringdb.com/asn/18932")[AS18932] operator
