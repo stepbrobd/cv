@@ -156,6 +156,7 @@
           </group>
         </else>
       </choose>
+      <text variable="note" prefix=" " font-style="italic"/>
       <text macro="access"/>
     </layout>
   </bibliography>
