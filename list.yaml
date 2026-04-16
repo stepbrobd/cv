@@ -1,3 +1,21 @@
+sun2026semantix:
+  type: article
+  title: "SemantiX: A Compatibility Checker between Applications and Compositions of Distributed Systems"
+  author:
+    - Sun, Yifei
+    - Shin, Ji-Yong
+  date: 2026-10
+  note: "Accepted, to appear."
+  parent:
+    type: proceedings
+    title: Proceedings of the 35th ACM SIGSOFT International Symposium on Software Testing and Analysis
+    publisher:
+      name: Association for Computing Machinery
+      location: Oakland, CA, USA
+    parent:
+      type: proceedings
+      title: ISSTA 2026
+
 vernon2025relationships:
   type: article
   title: "Relationships between fatigue, cognitive function, and upright activity in a randomized trial of oxaloacetate for myalgic encephalomyelitis/chronic fatigue syndrome"
