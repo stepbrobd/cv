@@ -223,11 +223,11 @@
 #section(
   name: "Awards",
 )[
-  - NetActuate sponsorship, VMs, transit (2026)
+  - NetActuate sponsorship, compute, transit (2026)
   - Oxide Computer, Silo access, compute (2026)
-  - Fastly sponsorship, service credit (2026)
-  - Garnix sponsorship, 30k min/mo build (2025)
-  - Cloudflare sponsorship, Enterprise plan (2025)
+  - Fastly sponsorship, Enterprise service contract credit (2026)
+  - Garnix sponsorship, 30k min/mo build time (2025)
+  - Cloudflare sponsorship, Enterprise service contract credit (2025)
   - Google CSRMP Fellow (2023b)
   - Academic Excellence Scholarship, University of Utah (2019-2023)
 ]
@@ -235,9 +235,10 @@
 #section(
   name: "Services",
 )[
-  - Grenoble Nix User Group organizer
+  - Nixpkgs committer, OCaml maintainer, Rocq/Coq maintainer, Darwin maintainer
+  - #link("https://icfp26.sigplan.org/profile/yifeisun")[ICFP \'26 Artifact Evaluation Committee] member
   - #link("https://www.usenix.org/conference/fast25/call-for-artifacts#:~:text=Yifei%C2%A0Sun%2C%20Northeastern%20University")[FAST \'25 Artifact Evaluation Committee] member
-  - Nixpkgs committer
+  - Grenoble Nix User Group organizer
   - #link("https://github.com/ngi-nix/ngipkgs")[NGIpkgs] Working Group, NixOS Foundation SoN 2024 (NLnet)
   - #link("https://www.peeringdb.com/asn/10779")[AS10779] / #link("https://www.peeringdb.com/asn/18932")[AS18932] operator
   - #link("https://www.ntppool.org/a/ysun")[NTP Pool] public time server operator
