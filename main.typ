@@ -236,6 +236,7 @@
   name: "Services",
 )[
   - Nixpkgs committer, OCaml maintainer, Rocq/Coq maintainer, Darwin maintainer
+  - #link("https://2026.splashcon.org/profile/yifeisun")[OOPSLA \'26 Artifact Evaluation Committee] member
   - #link("https://icfp26.sigplan.org/profile/yifeisun")[ICFP \'26 Artifact Evaluation Committee] member
   - #link("https://www.usenix.org/conference/fast25/call-for-artifacts#:~:text=Yifei%C2%A0Sun%2C%20Northeastern%20University")[FAST \'25 Artifact Evaluation Committee] member
   - Grenoble Nix User Group organizer
