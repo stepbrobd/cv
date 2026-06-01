@@ -2,6 +2,11 @@
 
 ![Status](https://github.com/stepbrobd/cv/actions/workflows/release.yaml/badge.svg)
 
+Binary Cache:
+
+- Cache: <https://cache.ysun.co>
+- Key: `cache.ysun.co-1:WxPYwT5g3kt9XhUhHPpNLZKI9HIOsVVAuqSHpok8Qt4=`
+
 CV with [Typst](https://github.com/typst/typst) and [Nix](https://nixos.org).
 
 ```shell
