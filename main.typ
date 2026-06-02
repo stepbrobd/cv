@@ -122,7 +122,7 @@
 #section(
   name: "Interests",
 )[
-  Reproducible HPC infrastructure, programmable networking (eBPF/XDP), formal verification of distributed systems, constructive type theory
+  Reproducible HPC infrastructure, programmable networking (eBPF/XDP/TC), formal verification of distributed systems, constructive type theory
 ]
 
 #section(
@@ -223,13 +223,13 @@
 #section(
   name: "Awards",
 )[
-  - NetActuate sponsorship, compute, transit (2026)
-  - Oxide Computer, Silo access, compute (2026)
-  - Fastly sponsorship, Enterprise service contract credit (2026)
-  - Garnix sponsorship, 30k min/mo build time (2025)
-  - Cloudflare sponsorship, Enterprise service contract credit (2025)
+  - NetActuate sponsorship, compute, transit (\$3,000/mo in value, 2026-)
+  - Oxide Computer, Silo access, compute (2026-)
+  - Fastly sponsorship, Enterprise service contract credit (\$65,000/yr in value, 2026-)
+  - Garnix sponsorship, 30k min/mo build time (\$100/mo in value, 2025-2026)
+  - Cloudflare sponsorship, Enterprise service contract credit (\$5,000/mo in value, 2025-)
   - Google CSRMP Fellow (2023b)
-  - Academic Excellence Scholarship, University of Utah (2019-2023)
+  - Academic Excellence Scholarship, University of Utah (\$2,500 $times$ 4, 2019-2023)
 ]
 
 #section(
