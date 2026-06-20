@@ -214,11 +214,10 @@
 #section(
   name: "Talks",
 )[
+  - #link("https://ecole26slicesfr.sciencesconf.org/program")[Effortlessly reproducible experiments], 2#super[e] École SLICES-FR, 2026/07/09, Nantes, France
   - #link("https://fosdem.org/2026/schedule/event/FE7BWX-ebpf_with_nix_laptop_to_testbed/")[eBPF with Nix: Laptop to Testbed], FOSDEM \'26, 2026/01/31, Brussels, Belgium
   - #link("https://talks.nixcon.org/nixcon-2025/talk/7YWTUC/")[Internet Scale Routing with NixOS], NixCon \'25, 2025/09/06, Zurich, Switzerland
 ]
-
-#pagebreak()
 
 #section(
   name: "Awards",
@@ -236,11 +235,12 @@
   name: "Services",
 )[
   - Nixpkgs committer, OCaml maintainer, Rocq/Coq maintainer, Darwin maintainer
+  - #link("https://github.com/ngi-nix/forge")[NGI Forge] Working Group mentor, NixOS Foundation SoN 2026 (NLnet)
   - #link("https://2026.splashcon.org/profile/yifeisun")[OOPSLA \'26 Artifact Evaluation Committee] member
   - #link("https://icfp26.sigplan.org/profile/yifeisun")[ICFP \'26 Artifact Evaluation Committee] member
   - #link("https://www.usenix.org/conference/fast25/call-for-artifacts#:~:text=Yifei%C2%A0Sun%2C%20Northeastern%20University")[FAST \'25 Artifact Evaluation Committee] member
   - Grenoble Nix User Group organizer
-  - #link("https://github.com/ngi-nix/ngipkgs")[NGIpkgs] Working Group, NixOS Foundation SoN 2024 (NLnet)
+  - #link("https://github.com/ngi-nix/ngipkgs")[NGIpkgs] Working Group participant, NixOS Foundation SoN 2024 (NLnet)
   - #link("https://www.peeringdb.com/asn/10779")[AS10779] / #link("https://www.peeringdb.com/asn/18932")[AS18932] operator
   - #link("https://www.ntppool.org/a/ysun")[NTP Pool] public time server operator
 ]
