@@ -122,7 +122,11 @@
 #section(
   name: "Interests",
 )[
-  Reproducible HPC infrastructure, programmable networking (eBPF/XDP/TC), formal verification of distributed systems, constructive type theory
+  Reproducible HPC infrastructure,
+  programmable networks (HW/SW codesign, eBPF/XDP/TC, etc.),
+  SDNs (segment routing, overlay network, etc.),
+  formal verification of distributed systems,
+  type theory and mechanized proofs.
 ]
 
 #section(
@@ -135,8 +139,7 @@
     location: "Lyon, Auvergne-Rhône-Alpes, France",
   )[
     LIG #link("https://team.inria.fr/datamove")[DataMove] team, LIP #link("https://avalon.ens-lyon.fr")[Avalon] team,
-    Advisor: #link("https://datamove.imag.fr/olivier.richard")[Olivier Richard],
-    Co-advisor: #link("https://avalon.ens-lyon.fr/~cperez/web/doku.php/start")[Christian Perez]
+    Advisors: #link("https://datamove.imag.fr/olivier.richard")[Olivier Richard], #link("https://avalon.ens-lyon.fr/~cperez/web/doku.php/start")[Christian Perez]
   ]
 
   #education(
@@ -166,8 +169,7 @@
     location: "Salt Lake City, UT, USA",
   )[
     #link("https://iss.mech.utah.edu")[Integrated Self-Powered Sensing Lab],
-    Advisor: #link("https://iss.mech.utah.edu/shad-roundy")[Shad Roundy],
-    Co-advisor: #link("https://robot-learning.cs.utah.edu/thermans")[Tucker Hermans]
+    Advisors: #link("https://iss.mech.utah.edu/shad-roundy")[Shad Roundy], #link("https://robot-learning.cs.utah.edu/thermans")[Tucker Hermans]
   ]
 ]
 
@@ -214,7 +216,8 @@
 #section(
   name: "Talks",
 )[
-  - #link("https://ecole26slicesfr.sciencesconf.org/program")[Effortlessly reproducible experiments], 2#super[e] École SLICES-FR, 2026/07/09, Nantes, France
+  - #link("https://grenug.fr/2026-09-11")[Atelier: GitHub Actions as Nix CI], GreNUG \'26, 2026/09/11, Grenoble, France
+  - #link("https://ecole26slicesfr.sciencesconf.org/program")[Effortlessly Reproducible Experiments], 2#super[e] École SLICES-FR, 2026/07/09, Nantes, France
   - #link("https://fosdem.org/2026/schedule/event/FE7BWX-ebpf_with_nix_laptop_to_testbed/")[eBPF with Nix: Laptop to Testbed], FOSDEM \'26, 2026/01/31, Brussels, Belgium
   - #link("https://talks.nixcon.org/nixcon-2025/talk/7YWTUC/")[Internet Scale Routing with NixOS], NixCon \'25, 2025/09/06, Zurich, Switzerland
 ]
@@ -224,11 +227,12 @@
 )[
   - NetActuate sponsorship, compute, transit (\$3,000/mo in value, 2026-)
   - Oxide Computer, Silo access, compute (2026-)
+  - Anthropic sponsorship, Claude for OSS (\$200/mo in value, 2026-)
   - Fastly sponsorship, Enterprise service contract credit (\$65,000/yr in value, 2026-)
   - Garnix sponsorship, 30k min/mo build time (\$100/mo in value, 2025-2026)
   - Cloudflare sponsorship, Enterprise service contract credit (\$5,000/mo in value, 2025-)
   - Google CSRMP Fellow (2023b)
-  - Academic Excellence Scholarship, University of Utah (\$2,500 $times$ 4, 2019-2023)
+  - Academic Excellence Scholarship, University of Utah (\$2,500/yr $times$ 4, 2019-2023)
 ]
 
 #section(
@@ -239,8 +243,9 @@
   - #link("https://2026.splashcon.org/profile/yifeisun")[OOPSLA \'26 Artifact Evaluation Committee] member
   - #link("https://icfp26.sigplan.org/profile/yifeisun")[ICFP \'26 Artifact Evaluation Committee] member
   - #link("https://www.usenix.org/conference/fast25/call-for-artifacts#:~:text=Yifei%C2%A0Sun%2C%20Northeastern%20University")[FAST \'25 Artifact Evaluation Committee] member
-  - Grenoble Nix User Group organizer
+  - #link("https://grenug.fr")[Grenoble Nix User Group] organizer
   - #link("https://github.com/ngi-nix/ngipkgs")[NGIpkgs] Working Group participant, NixOS Foundation SoN 2024 (NLnet)
+  - #link("https://account.arin.net/public/member-list")[ARIN general member]
   - #link("https://www.peeringdb.com/asn/10779")[AS10779] / #link("https://www.peeringdb.com/asn/18932")[AS18932] operator
   - #link("https://www.ntppool.org/a/ysun")[NTP Pool] public time server operator
 ]
