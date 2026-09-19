@@ -225,6 +225,7 @@
 #section(
   name: "Awards",
 )[
+  - #link("https://conf.researchr.org/track/issta-2026/issta-2026-research-papers")[ACM SIGSOFT Distinguished Paper Award], ISSTA \'26 (19 of 210 papers, 2026)
   - NetActuate sponsorship, compute, transit (\$3,000/mo in value, 2026-)
   - Oxide Computer, Silo access, compute (2026-)
   - Anthropic sponsorship, Claude for OSS (\$200/mo in value, 2026-)

@@ -5,16 +5,14 @@ sun2026semantix:
     - Sun, Yifei
     - Shin, Ji-Yong
   date: 2026-10
-  note: "Accepted (10.1%), Distinguished Paper, to appear."
+  page-range: ISSTA047
+  url: https://conf.researchr.org/details/issta-2026/issta-2026-research-papers/47/SemantiX-A-Compatibility-Checker-between-Applications-and-Compositions-of-Distribute
+  note: "Directly accepted (10.1%), Distinguished Paper, Artifacts Available and Reusable, to appear."
   parent:
-    type: proceedings
-    title: Proceedings of the 35th ACM SIGSOFT International Symposium on Software Testing and Analysis
-    publisher:
-      name: Association for Computing Machinery
-      location: Oakland, CA, USA
-    parent:
-      type: proceedings
-      title: ISSTA 2026
+    type: periodical
+    title: Proceedings of the ACM on Software Engineering
+    volume: 3
+    issue: ISSTA
 
 vernon2025relationships:
   type: article
