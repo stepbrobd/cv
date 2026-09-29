@@ -216,16 +216,17 @@
 #section(
   name: "Talks",
 )[
+  - #link("https://talks.nixcon.org/nixcon-2026/talk/CRK3WW/")[Automated function/package/scope creation + override, and modules without specialArgs], NixCon \'26, 2026/09/06, Kraków, Poland
   - #link("https://grenug.fr/2026-09-11")[Atelier: GitHub Actions as Nix CI], GreNUG \'26, 2026/09/11, Grenoble, France
   - #link("https://ecole26slicesfr.sciencesconf.org/program")[Effortlessly Reproducible Experiments], 2#super[e] École SLICES-FR, 2026/07/09, Nantes, France
   - #link("https://fosdem.org/2026/schedule/event/FE7BWX-ebpf_with_nix_laptop_to_testbed/")[eBPF with Nix: Laptop to Testbed], FOSDEM \'26, 2026/01/31, Brussels, Belgium
-  - #link("https://talks.nixcon.org/nixcon-2025/talk/7YWTUC/")[Internet Scale Routing with NixOS], NixCon \'25, 2025/09/06, Zurich, Switzerland
+  - #link("https://talks.nixcon.org/nixcon-2025/talk/7YWTUC/")[Internet Scale Routing with NixOS], NixCon \'25, 2025/09/06, Rapperswil-Jona, Switzerland
 ]
 
 #section(
   name: "Awards",
 )[
-  - #link("https://conf.researchr.org/track/issta-2026/issta-2026-research-papers")[ACM SIGSOFT Distinguished Paper Award], ISSTA \'26 (19 of 210 papers, 2026)
+  - ACM SIGSOFT Distinguished Paper Award, ISSTA \'26 (2026)
   - NetActuate sponsorship, compute, transit (\$3,000/mo in value, 2026-)
   - Oxide Computer, Silo access, compute (2026-)
   - Anthropic sponsorship, Claude for OSS (\$200/mo in value, 2026-)
