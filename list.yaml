@@ -6,8 +6,8 @@ sun2026semantix:
     - Shin, Ji-Yong
   date: 2026-10
   page-range: ISSTA047
-  url: https://conf.researchr.org/details/issta-2026/issta-2026-research-papers/47/SemantiX-A-Compatibility-Checker-between-Applications-and-Compositions-of-Distribute
-  note: "Directly accepted (10.1%), Distinguished Paper, Artifacts Available and Reusable, to appear."
+  url: https://doi.org/10.1145/3832138
+  note: "Directly accepted (10.1%), Distinguished Paper, Artifacts Available and Reusable."
   parent:
     type: periodical
     title: Proceedings of the ACM on Software Engineering
