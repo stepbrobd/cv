@@ -230,6 +230,7 @@
   - NetActuate sponsorship, compute, transit (\$3,000/mo in value, 2026-)
   - Oxide Computer, Silo access, compute (2026-)
   - Anthropic sponsorship, Claude for OSS (\$200/mo in value, 2026-)
+  - OpenAI sponsorship, Codex for OSS (\$200/mo in value, 6 months, 2026-)
   - Fastly sponsorship, Enterprise service contract credit (\$65,000/yr in value, 2026-)
   - Garnix sponsorship, 30k min/mo build time (\$100/mo in value, 2025-2026)
   - Cloudflare sponsorship, Enterprise service contract credit (\$5,000/mo in value, 2025-)
